@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modxsite',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '75f82f8a3bdcb7b90ebd10673e5e706f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '684615b7cebce7e720c3b0fcd1456037',
+  'native_key' => 'modxSite.template_url',
+  'object' => '{"key":"modxSite.template_url","value":"{assets_url}components\\/modxsite\\/templates\\/","xtype":"textfield","namespace":"modxsite","area":"site","editedon":null}',
+);

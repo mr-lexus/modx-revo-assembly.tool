@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modxsite',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '415b4926e32352ac6820edd412be570a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8f16c116f3558fb70c9d8c43c6e9702e',
+  'native_key' => 'modxsite.thumb_snippet',
+  'object' => '{"key":"modxsite.thumb_snippet","value":"","xtype":"textfield","namespace":"modxsite","area":"site","editedon":null}',
+);

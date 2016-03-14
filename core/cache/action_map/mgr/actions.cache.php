@@ -1,4 +1,17 @@
 <?php  return array (
+  9 => 
+  array (
+    'id' => '9',
+    'namespace' => 'collections',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'collections:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'collections',
+    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/collections/',
+    'namespace_assets_path' => '{assets_path}components/collections/',
+  ),
   4 => 
   array (
     'id' => '4',
@@ -36,7 +49,7 @@
     'help_url' => '',
     'namespace_name' => 'formit',
     'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/formit/',
-    'namespace_assets_path' => '',
+    'namespace_assets_path' => '{assets_path}components/formit/',
   ),
   7 => 
   array (
@@ -51,19 +64,6 @@
     'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/migx/',
     'namespace_assets_path' => '{assets_path}components/migx/',
   ),
-  3 => 
-  array (
-    'id' => '3',
-    'namespace' => 'moddevtools',
-    'controller' => 'index',
-    'haslayout' => '1',
-    'lang_topics' => 'moddevtools:default',
-    'assets' => '',
-    'help_url' => '',
-    'namespace_name' => 'moddevtools',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/moddevtools/',
-    'namespace_assets_path' => '{base_path}extras/modDevTools/assets/components/moddevtools/',
-  ),
   1 => 
   array (
     'id' => '1',
@@ -76,18 +76,5 @@
     'namespace_name' => 'modupdater',
     'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/modupdater/',
     'namespace_assets_path' => '',
-  ),
-  6 => 
-  array (
-    'id' => '6',
-    'namespace' => 'modxsdk',
-    'controller' => 'controllers/',
-    'haslayout' => '1',
-    'lang_topics' => 'modxsdk:default',
-    'assets' => '',
-    'help_url' => '',
-    'namespace_name' => 'modxsdk',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/modxsdk/',
-    'namespace_assets_path' => '{assets_path}components/modxsdk/',
   ),
 );

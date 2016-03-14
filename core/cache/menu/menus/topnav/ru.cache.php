@@ -258,26 +258,6 @@
       ),
       2 => 
       array (
-        'text' => 'modDevTools',
-        'parent' => 'components',
-        'action' => '3',
-        'description' => 'Удобное управление элементами',
-        'icon' => 'images/icons/plugin.gif',
-        'menuindex' => 0,
-        'params' => '',
-        'handler' => '',
-        'permissions' => 'view_chunk,view_template',
-        'namespace' => 'core',
-        'action_controller' => 'index',
-        'action_namespace' => 'moddevtools',
-        'id' => 'moddevtools',
-        'children' => 
-        array (
-        ),
-        'controller' => '',
-      ),
-      3 => 
-      array (
         'text' => 'Console',
         'parent' => 'components',
         'action' => '4',
@@ -296,27 +276,27 @@
         ),
         'controller' => '',
       ),
-      4 => 
+      3 => 
       array (
-        'text' => 'MODX SDK',
+        'text' => 'Виды Коллекции',
         'parent' => 'components',
-        'action' => '6',
-        'description' => 'Среда разработки MODX',
-        'icon' => 'images/icons/plugin.gif',
+        'action' => '9',
+        'description' => 'Определите виды для таблицы дочерних ресурсов коллекции.',
+        'icon' => '',
         'menuindex' => 0,
         'params' => '',
         'handler' => '',
-        'permissions' => 'console',
-        'namespace' => 'modxsdk',
-        'action_controller' => 'controllers/',
-        'action_namespace' => 'modxsdk',
-        'id' => 'modxsdk',
+        'permissions' => '',
+        'namespace' => 'core',
+        'action_controller' => 'index',
+        'action_namespace' => 'collections',
+        'id' => 'collections.menu.collection_templates',
         'children' => 
         array (
         ),
         'controller' => '',
       ),
-      5 => 
+      4 => 
       array (
         'text' => 'MIGX',
         'parent' => 'components',
@@ -336,7 +316,7 @@
         ),
         'controller' => '',
       ),
-      6 => 
+      5 => 
       array (
         'text' => 'FormIt',
         'parent' => 'components',

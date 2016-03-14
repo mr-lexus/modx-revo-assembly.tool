@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modxsite',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '770d9b4029c71e78da9c3046db53ae60',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '057e7ee5cab64f3ad5e57f806294590a',
+  'native_key' => 'modxsite.thumb_types',
+  'object' => '{"key":"modxsite.thumb_types","value":"{\\"small\\":\\"&q=90&f=jpg&w=280&h=210\\",\\"medium\\":\\"&q=90&f=jpg&w=600&h=375\\",\\"big\\":\\"&q=90&f=jpg&w=1000&h=750\\"}","xtype":"textarea","namespace":"modxsite","area":"site","editedon":null}',
+);

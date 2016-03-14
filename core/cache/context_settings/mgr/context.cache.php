@@ -9,24 +9,27 @@
   ),
   'eventMap' => 
   array (
+    'OnBeforeDocFormSave' => 
+    array (
+      15 => '15',
+    ),
+    'OnBeforeEmptyTrash' => 
+    array (
+      15 => '15',
+    ),
     'OnChunkFormPrerender' => 
     array (
-      5 => '5',
       2 => '2',
-    ),
-    'OnChunkFormSave' => 
-    array (
-      5 => '5',
     ),
     'OnDocFormPrerender' => 
     array (
       13 => '13',
-      5 => '5',
+      15 => '15',
       2 => '2',
     ),
-    'OnDocFormSave' => 
+    'OnDocFormRender' => 
     array (
-      5 => '5',
+      15 => '15',
     ),
     'OnFileCreateFormPrerender' => 
     array (
@@ -48,16 +51,21 @@
     'OnManagerPageBeforeRender' => 
     array (
       2 => '2',
+      15 => '15',
     ),
     'OnManagerPageInit' => 
     array (
-      12 => '12',
-      10 => '10',
+      15 => '15',
       11 => '11',
+      12 => '12',
     ),
     'OnPluginFormPrerender' => 
     array (
       2 => '2',
+    ),
+    'OnResourceBeforeSort' => 
+    array (
+      15 => '15',
     ),
     'OnRichTextBrowserInit' => 
     array (
@@ -78,17 +86,11 @@
     ),
     'OnSnipFormPrerender' => 
     array (
-      5 => '5',
       2 => '2',
     ),
     'OnTempFormPrerender' => 
     array (
-      5 => '5',
       2 => '2',
-    ),
-    'OnTempFormSave' => 
-    array (
-      5 => '5',
     ),
     'OnTVInputPropertiesList' => 
     array (
@@ -197,13 +199,210 @@ This option enables you to specify where the toolbar should be located. This opt
       'editor_type' => '0',
       'category' => '0',
       'cache_type' => '0',
-      'plugincode' => '',
+      'plugincode' => '/**
+ * Ace Source Editor Plugin
+ *
+ * Events: OnManagerPageBeforeRender, OnRichTextEditorRegister, OnSnipFormPrerender,
+ * OnTempFormPrerender, OnChunkFormPrerender, OnPluginFormPrerender,
+ * OnFileCreateFormPrerender, OnFileEditFormPrerender, OnDocFormPrerender
+ *
+ * @author Danil Kostin <danya.postfactum(at)gmail.com>
+ *
+ * @package ace
+ *
+ * @var array $scriptProperties
+ * @var Ace $ace
+ */
+if ($modx->event->name == \'OnRichTextEditorRegister\') {
+    $modx->event->output(\'Ace\');
+    return;
+}
+
+if ($modx->getOption(\'which_element_editor\', null, \'Ace\') !== \'Ace\') {
+    return;
+}
+
+$ace = $modx->getService(\'ace\', \'Ace\', $modx->getOption(\'ace.core_path\', null, $modx->getOption(\'core_path\').\'components/ace/\').\'model/ace/\');
+$ace->initialize();
+
+$extensionMap = array(
+    \'tpl\'   => \'text/x-smarty\',
+    \'htm\'   => \'text/html\',
+    \'html\'  => \'text/html\',
+    \'css\'   => \'text/css\',
+    \'scss\'  => \'text/x-scss\',
+    \'less\'  => \'text/x-less\',
+    \'svg\'   => \'image/svg+xml\',
+    \'xml\'   => \'application/xml\',
+    \'xsl\'   => \'application/xml\',
+    \'js\'    => \'application/javascript\',
+    \'json\'  => \'application/json\',
+    \'php\'   => \'application/x-php\',
+    \'sql\'   => \'text/x-sql\',
+    \'md\'    => \'text/x-markdown\',
+    \'txt\'   => \'text/plain\',
+    \'twig\'  => \'text/x-twig\'
+);
+
+// Defines wether we should highlight modx tags
+$modxTags = false;
+switch ($modx->event->name) {
+    case \'OnSnipFormPrerender\':
+        $field = \'modx-snippet-snippet\';
+        $mimeType = \'application/x-php\';
+        break;
+    case \'OnTempFormPrerender\':
+        $field = \'modx-template-content\';
+        $modxTags = true;
+
+        switch (true) {
+            case $modx->getOption(\'twiggy_class\'):
+                $mimeType = \'text/x-twig\';
+                break;
+            case $modx->getOption(\'pdotools_fenom_parser\'):
+                $mimeType = \'text/x-smarty\';
+                break;
+            default:
+                $mimeType = \'text/html\';
+                break;
+        }
+
+        break;
+    case \'OnChunkFormPrerender\':
+        $field = \'modx-chunk-snippet\';
+        if ($modx->controller->chunk && $modx->controller->chunk->isStatic()) {
+            $extension = pathinfo($modx->controller->chunk->getSourceFile(), PATHINFO_EXTENSION);
+            $mimeType = isset($extensionMap[$extension]) ? $extensionMap[$extension] : \'text/plain\';
+        } else {
+            $mimeType = \'text/html\';
+        }
+        $modxTags = true;
+
+        switch (true) {
+            case $modx->getOption(\'twiggy_class\'):
+                $mimeType = \'text/x-twig\';
+                break;
+            case $modx->getOption(\'pdotools_fenom_default\'):
+                $mimeType = \'text/x-smarty\';
+                break;
+            default:
+                $mimeType = \'text/html\';
+                break;
+        }
+
+        break;
+    case \'OnPluginFormPrerender\':
+        $field = \'modx-plugin-plugincode\';
+        $mimeType = \'application/x-php\';
+        break;
+    case \'OnFileCreateFormPrerender\':
+        $field = \'modx-file-content\';
+        $mimeType = \'text/plain\';
+        break;
+    case \'OnFileEditFormPrerender\':
+        $field = \'modx-file-content\';
+        $extension = pathinfo($scriptProperties[\'file\'], PATHINFO_EXTENSION);
+        $mimeType = isset($extensionMap[$extension])
+            ? $extensionMap[$extension]
+            : \'text/plain\';
+        $modxTags = $extension == \'tpl\';
+        break;
+    case \'OnDocFormPrerender\':
+        if (!$modx->controller->resourceArray) {
+            return;
+        }
+        $field = \'ta\';
+        $mimeType = $modx->getObject(\'modContentType\', $modx->controller->resourceArray[\'content_type\'])->get(\'mime_type\');
+
+        switch (true) {
+            case $mimeType == \'text/html\' && $modx->getOption(\'twiggy_class\'):
+                $mimeType = \'text/x-twig\';
+                break;
+            case $mimeType == \'text/html\' && $modx->getOption(\'pdotools_fenom_parser\'):
+                $mimeType = \'text/x-smarty\';
+                break;
+        }
+
+        if ($modx->getOption(\'use_editor\')){
+            $richText = $modx->controller->resourceArray[\'richtext\'];
+            $classKey = $modx->controller->resourceArray[\'class_key\'];
+            if ($richText || in_array($classKey, array(\'modStaticResource\',\'modSymLink\',\'modWebLink\',\'modXMLRPCResource\'))) {
+                $field = false;
+            }
+        }
+        $modxTags = true;
+        break;
+    default:
+        return;
+}
+
+$modxTags = (int) $modxTags;
+$script = \'\';
+if ($field) {
+    $script .= "MODx.ux.Ace.replaceComponent(\'$field\', \'$mimeType\', $modxTags);";
+}
+
+if ($modx->event->name == \'OnDocFormPrerender\' && !$modx->getOption(\'use_editor\')) {
+    $script .= "MODx.ux.Ace.replaceTextAreas(Ext.query(\'.modx-richtext\'));";
+}
+
+if ($script) {
+    $modx->controller->addHtml(\'<script>Ext.onReady(function() {\' . $script . \'});</script>\');
+}',
       'locked' => '0',
-      'properties' => NULL,
+      'properties' => 'a:0:{}',
       'disabled' => '0',
       'moduleguid' => '',
-      'static' => '1',
+      'static' => '0',
       'static_file' => 'ace/elements/plugins/ace.plugin.php',
+    ),
+    15 => 
+    array (
+      'id' => '15',
+      'source' => '0',
+      'property_preprocess' => '0',
+      'name' => 'Collections',
+      'description' => '',
+      'editor_type' => '0',
+      'category' => '19',
+      'cache_type' => '0',
+      'plugincode' => '/**
+ * Collections
+ *
+ * DESCRIPTION
+ *
+ * This plugin inject JS to handle proper working of close buttons in Resource\'s panel (OnDocFormPrerender)
+ * This plugin handles setting proper show_in_tree parameter (OnBeforeDocFormSave, OnResourceSort)
+ *
+ */
+$corePath = $modx->getOption(\'collections.core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components/collections/\');
+/** @var Collections $collections */
+$collections = $modx->getService(
+    \'collections\',
+    \'Collections\',
+    $corePath . \'model/collections/\',
+    array(
+        \'core_path\' => $corePath
+    )
+);
+
+$className = \'Collections\' . $modx->event->name;
+
+$modx->loadClass(\'CollectionsPlugin\', $collections->getOption(\'modelPath\') . \'collections/events/\', true, true);
+$modx->loadClass($className, $collections->getOption(\'modelPath\') . \'collections/events/\', true, true);
+
+if (class_exists($className)) {
+    $handler = new $className($modx, $scriptProperties);
+    $handler->run();
+}
+
+return;',
+      'locked' => '0',
+      'properties' => 'a:0:{}',
+      'disabled' => '0',
+      'moduleguid' => '',
+      'static' => '0',
+      'static_file' => '',
     ),
     4 => 
     array (
@@ -268,103 +467,6 @@ This option enables you to specify where the toolbar should be located. This opt
       'moduleguid' => '',
       'static' => '0',
       'static_file' => 'core/components/ajaxsnippet/elements/plugins/plugin.ajaxsnippet.php',
-    ),
-    5 => 
-    array (
-      'id' => '5',
-      'source' => '1',
-      'property_preprocess' => '0',
-      'name' => 'modDevTools',
-      'description' => '',
-      'editor_type' => '0',
-      'category' => '7',
-      'cache_type' => '0',
-      'plugincode' => '/**
- * modDevTools
- *
- * Copyright 2014 by Vitaly Kireev <kireevvit@gmail.com>
- *
- * @package moddevtools
- *
- * @var modX $modx
- * @var int $id
- * @var string $mode
- */
-
-/**
- * @var modx $modx
- */
-$path = $modx->getOption(\'moddevtools_core_path\',null,$modx->getOption(\'core_path\').\'components/moddevtools/\').\'model/moddevtools/\';
-/**
- * @var modDevTools $devTools
- */
-$devTools = $modx->getService(\'devTools\',\'modDevTools\',$path, array(\'debug\' => false, \'createVirtual\' => true));
-$eventName = $modx->event->name;
-
-switch($eventName) {
-    case \'OnDocFormSave\':
-        $devTools->debug(\'Start OnDocFormSave\');
-        $devTools->parseContent($resource);
-        break;
-    case \'OnTempFormSave\':
-        $devTools->debug(\'Start OnTempFormSave\');
-        $devTools->parseContent($template);
-        break;
-    case \'OnTVFormSave\':
-
-        break;
-    case \'OnChunkFormSave\':
-        $devTools->debug(\'Start OnChunkFormSave\');
-        $devTools->parseContent($chunk);
-        break;
-    case \'OnSnipFormSave\':
-
-        break;
-    /* Add tabs */
-    case \'OnDocFormPrerender\':
-        if ($modx->event->name == \'OnDocFormPrerender\') {
-            $devTools->getBreadCrumbs($scriptProperties);
-            return;
-        }
-        break;
-
-    case \'OnTempFormPrerender\':
-        if ($mode == modSystemEvent::MODE_UPD) {
-            $result = $devTools->outputTab(\'Template\');
-        }
-        break;
-
-    case \'OnTVFormPrerender\':
-        break;
-
-
-    case \'OnChunkFormPrerender\':
-        if ($mode == modSystemEvent::MODE_UPD) {
-            $result = $devTools->outputTab(\'Chunk\');
-        }
-        break;
-
-    case \'OnSnipFormPrerender\':
-        if ($mode == modSystemEvent::MODE_UPD) {
-            $result = $devTools->outputTab(\'Snippet\');
-        }
-        break;
-
-
-}
-
-if (isset($result) && $result === true)
-    return;
-elseif (isset($result)) {
-    $modx->log(modX::LOG_LEVEL_ERROR,\'[modDevTools] An error occured. Event: \'.$eventName.\' - Error: \'.($result === false) ? \'undefined error\' : $result);
-    return;
-}',
-      'locked' => '0',
-      'properties' => NULL,
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => 'core/components/moddevtools/elements/plugins/plugin.moddevtools.php',
     ),
     9 => 
     array (
@@ -452,32 +554,6 @@ switch($modx->event->name){
         break;
     
     default:;
-}',
-      'locked' => '0',
-      'properties' => NULL,
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => '',
-    ),
-    10 => 
-    array (
-      'id' => '10',
-      'source' => '0',
-      'property_preprocess' => '0',
-      'name' => 'modxSDK',
-      'description' => '',
-      'editor_type' => '0',
-      'category' => '14',
-      'cache_type' => '0',
-      'plugincode' => 'switch($modx->event->name) {
-    case \'OnManagerPageInit\':
-        if(!$path = $modx->getOption(\'modxsdk.manager_url\')){
-            $path = $modx->getOption(\'manager_url\').\'components/modxsdk/\';
-        }
-        $cssFile = $path.\'css/modxsdk.css\';
-        $modx->regClientCSS($cssFile);
-    break;
 }',
       'locked' => '0',
       'properties' => NULL,

@@ -5,12 +5,6 @@
     'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/ace/',
     'assets_path' => '',
   ),
-  'admintools' => 
-  array (
-    'name' => 'admintools',
-    'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/admintools/',
-    'assets_path' => '',
-  ),
   'ajaxform' => 
   array (
     'name' => 'ajaxform',
@@ -22,6 +16,12 @@
     'name' => 'ajaxsnippet',
     'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/ajaxsnippet/',
     'assets_path' => '',
+  ),
+  'collections' => 
+  array (
+    'name' => 'collections',
+    'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/collections/',
+    'assets_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/assets/components/collections/',
   ),
   'console' => 
   array (
@@ -45,7 +45,7 @@
   array (
     'name' => 'formit',
     'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/formit/',
-    'assets_path' => '',
+    'assets_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/assets/components/formit/',
   ),
   'migx' => 
   array (
@@ -53,23 +53,11 @@
     'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/migx/',
     'assets_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/assets/components/migx/',
   ),
-  'moddevtools' => 
-  array (
-    'name' => 'moddevtools',
-    'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/moddevtools/',
-    'assets_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/extras/modDevTools/assets/components/moddevtools/',
-  ),
   'modupdater' => 
   array (
     'name' => 'modupdater',
     'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/modupdater/',
     'assets_path' => '',
-  ),
-  'modxsdk' => 
-  array (
-    'name' => 'modxsdk',
-    'path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/modxsdk/',
-    'assets_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/assets/components/modxsdk/',
   ),
   'modxsite' => 
   array (
