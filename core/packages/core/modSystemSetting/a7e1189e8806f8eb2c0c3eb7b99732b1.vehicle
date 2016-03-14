@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5506cfd2649e8d4b0c4881d973ace7fd',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a7e1189e8806f8eb2c0c3eb7b99732b1',
+  'native_key' => 'server_offset_time',
+  'object' => '{"key":"server_offset_time","value":"0","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

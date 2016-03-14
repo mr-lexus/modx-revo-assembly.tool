@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modxsdk',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4a3d936ff74da8824ca475b7ea41b2b4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e4116ddbc3ec6f124bb4f811e706bfdc',
+  'native_key' => 'modxsdk.default_source',
+  'object' => '{"key":"modxsdk.default_source","value":"","xtype":"numberfiel","namespace":"modxsdk","area":"file","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'name',
+  'namespace' => 'modxsdk',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '274a1fd16463051891ac2cfb788b7c17',
+  'package' => 'modx.sources',
+  'class' => 'modMediaSource',
+  'signature' => 'a7c876b59f772e97203dfa7c43149c8c',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"MODX Model","description":"Source for MODX Model","class_key":"sources.modFileMediaSource","properties":"a:2:{s:8:\\"basePath\\";a:6:{s:4:\\"name\\";s:8:\\"basePath\\";s:4:\\"desc\\";s:23:\\"prop_file.basePath_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:16:\\"core\\/model\\/modx\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}s:7:\\"baseUrl\\";a:6:{s:4:\\"name\\";s:7:\\"baseUrl\\";s:4:\\"desc\\";s:22:\\"prop_file.baseUrl_desc\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:16:\\"core\\/model\\/modx\\/\\";s:7:\\"lexicon\\";s:11:\\"core:source\\";}}","is_stream":1}',
+);

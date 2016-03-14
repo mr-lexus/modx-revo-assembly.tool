@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modxsdk',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c57310adfe517cda8967880281f799c0',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '188c4f4f763e6112d7ba5eb134280bbb',
+  'native_key' => 'modxsdk.ace_theme',
+  'object' => '{"key":"modxsdk.ace_theme","value":"ace\\/theme\\/monokai","xtype":"textfield","namespace":"modxsdk","area":"file","editedon":null}',
+);

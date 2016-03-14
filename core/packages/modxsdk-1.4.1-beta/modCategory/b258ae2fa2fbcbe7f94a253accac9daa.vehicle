@@ -1,0 +1,131 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'df394a13acc643ecad91b2f7ebd6fdb7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '14e9d05cd0b6c78f1ecc93c081283fa9' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageInit","priority":0,"propertyset":0}',
+              'guid' => '6300143b5f36684b267f2d3aa52bd8f3',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageInit',
+              ),
+              'signature' => '56f2591d5d1b93c36059c4753cff4306',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"modxSDK","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch($modx->event->name) {\\r\\n    case \'OnManagerPageInit\':\\r\\n        if(!$path = $modx->getOption(\'modxsdk.manager_url\')){\\r\\n            $path = $modx->getOption(\'manager_url\').\'components\\/modxsdk\\/\';\\r\\n        }\\r\\n        $cssFile = $path.\'css\\/modxsdk.css\';\\r\\n        $modx->regClientCSS($cssFile);\\r\\n    break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"switch($modx->event->name) {\\r\\n    case \'OnManagerPageInit\':\\r\\n        if(!$path = $modx->getOption(\'modxsdk.manager_url\')){\\r\\n            $path = $modx->getOption(\'manager_url\').\'components\\/modxsdk\\/\';\\r\\n        }\\r\\n        $cssFile = $path.\'css\\/modxsdk.css\';\\r\\n        $modx->regClientCSS($cssFile);\\r\\n    break;\\r\\n}"}',
+        'guid' => 'e807f3aebdc472bb568d7fa3dfc84eba',
+        'native_key' => 1,
+        'signature' => '89031f59cd39da8d3413cb76444b597c',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'modxsdk',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modxsdk"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"modxsdk"}',
+    ),
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa\\/2\\/","target":"return MODX_MANAGER_PATH . \'components\\/\';","name":"modxsdk"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa.resolve.register.resolver","type":"php","name":"resolve.register"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modxsdk-1.4.1-beta\\/modCategory\\/b258ae2fa2fbcbe7f94a253accac9daa.resolve.update_objects.resolver","type":"php","name":"resolve.update_objects"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a60e055a1230c1fca645ab48a9af15ae',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'b258ae2fa2fbcbe7f94a253accac9daa',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"modxSDK"}',
+);

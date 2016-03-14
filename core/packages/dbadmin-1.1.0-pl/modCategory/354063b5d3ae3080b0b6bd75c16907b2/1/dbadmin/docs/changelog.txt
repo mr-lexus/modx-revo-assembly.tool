@@ -1,0 +1,24 @@
+Changelog for dbAdmin.
+
+1.1.0-pl
+==============
+- Added the ability to edit the selected cell in tables with a class or remove entire row.
+- Auto-update the list of tables.
+- Added Magic button to define a class for table.
+- Added 'Select from' button to the tables grid that adds 'Select from' script for selected table to the SQL query editor.
+
+1.0.1-pl
+==============
+- Fixed the error of checking update (wrong package name).
+- Added autocreation a folder for export operation.
+- Added the table access_namespace for MODX 2.4.0.
+
+1.0.0-pl
+==============
+- Fixed the error of renaming table.
+- Auto synchronization instead of the button.
+- Added a "need update" marker (by experiment).
+
+1.0.0-beta
+==============
+- Initial release

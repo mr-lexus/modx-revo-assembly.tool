@@ -1,0 +1,143 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '3faab5e72bd8f531cc8b30870f75d9f8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"table_export","description":"table_export","value":1}',
+        'guid' => 'e7e8801e6b0755e847ea5052ddd83ab4',
+        'native_key' => NULL,
+        'signature' => 'f12966c5cb8b22cfe24113f3685939f8',
+      ),
+      '6c666a96430fa6cd2f0a63340b20404b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"sql_query_execute","description":"sql_query_execute","value":1}',
+        'guid' => 'd14c37c8181294ff87aa233f82a22825',
+        'native_key' => NULL,
+        'signature' => 'f41f8827870c4a722569013c756c55dc',
+      ),
+      '8bd0cc311f08573125438c8642d696ee' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"tables_list","description":"tables_list","value":1}',
+        'guid' => 'c410e3d7f4879d4928d3fba789753ecf',
+        'native_key' => NULL,
+        'signature' => 'fa9dd46c568d719e46423d44d4ff30a1',
+      ),
+      '7575f8db0b6cc6af698c110f4f1c6fea' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"table_remove","description":"table_remove","value":1}',
+        'guid' => 'b13f3a672d719afd492a84fe1786df95',
+        'native_key' => NULL,
+        'signature' => 'b2299535c919e779c5f57f458616fcf2',
+      ),
+      '5365ce27aec1baa4d04c5f24e73ebf21' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"table_truncate","description":"table_truncate","value":1}',
+        'guid' => 'adc46be74dc5d695bb8bcb24a9b3d188',
+        'native_key' => NULL,
+        'signature' => 'd3bfc981aefd50cb9175bd9b72eafc41',
+      ),
+      '63b50d347014d8616b9db9761e07de24' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"table_view","description":"table_view","value":1}',
+        'guid' => '4752b00e3f960734c7992c011c4ba326',
+        'native_key' => NULL,
+        'signature' => 'b926838d05f3ccf719ce28c2e9d5ff15',
+      ),
+      '1248e77f3eaee5447171cc5f4229c656' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"table_save","description":"table_save","value":1}',
+        'guid' => '5256f35ff2fe17f66596cc7830762f09',
+        'native_key' => NULL,
+        'signature' => 'b71941c89f06d2ccd67092cbe4aa24b1',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'dbadmin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '20638c0fedad8203934f162febd16893',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => 'd137f0859e355f233f269e7bf6d8efab',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"dbAdministratorPolicyTemplate","description":"Database administrator policy template.","lexicon":"dbadmin:permissions","permissions":{"table_export":[],"sql_query_execute":[],"tables_list":[],"table_remove":[],"table_truncate":[],"table_view":[],"table_save":[]}}',
+);

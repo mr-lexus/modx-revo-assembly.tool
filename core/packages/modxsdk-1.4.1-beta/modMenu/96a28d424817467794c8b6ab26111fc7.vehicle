@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '5ec4ce5934e7d4ab95a5a30906f29900' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":1,"namespace":"modxsdk","controller":"controllers\\/","haslayout":1,"lang_topics":"modxsdk:default","assets":"","help_url":"","parent":0}',
+        'guid' => '98b4a7f41aebcf11695013ff6456e2bb',
+        'native_key' => 1,
+        'signature' => '261363bf83653fd4d0a7b50863d849e8',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'modxsdk',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '11241ae95c71d3ec02f1df3c40254592',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '96a28d424817467794c8b6ab26111fc7',
+  'native_key' => 'modxsdk',
+  'object' => '{"text":"modxsdk","parent":"components","action":1,"description":"modxsdk_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"console","namespace":"modxsdk"}',
+);

@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'dbadmin',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4958d12b7fdc9bcc2b17e2a25f38b995',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => '7b0cad65842797ca605c01b91f7445bf',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"dbAdministrator","description":"A policy for database administrator.","parent":0,"template":0,"class":"","data":"{\\"tables_list\\":true,\\"table_view\\":true,\\"table_save\\":true,\\"table_truncate\\":true,\\"table_remove\\":true,\\"table_export\\":true,\\"sql_query_execute\\":true}","lexicon":"dbadmin:permissions"}',
+);

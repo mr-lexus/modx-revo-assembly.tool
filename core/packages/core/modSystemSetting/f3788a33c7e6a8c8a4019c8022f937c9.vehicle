@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0ed99c116fe59b3d09071097eae9a36d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f3788a33c7e6a8c8a4019c8022f937c9',
+  'native_key' => 'strip_image_paths',
+  'object' => '{"key":"strip_image_paths","value":"1","xtype":"combo-boolean","namespace":"core","area":"file","editedon":null}',
+);

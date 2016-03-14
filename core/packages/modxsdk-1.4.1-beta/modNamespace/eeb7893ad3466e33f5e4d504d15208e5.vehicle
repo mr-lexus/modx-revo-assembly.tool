@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'modxsdk',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '39734d797163d51701c65fddb6f9fa0a',
+  'package' => 'modx',
+  'class' => 'modNamespace',
+  'signature' => 'eeb7893ad3466e33f5e4d504d15208e5',
+  'native_key' => 'modxsdk',
+  'object' => '{"name":"modxsdk","path":"{core_path}components\\/modxsdk\\/","assets_path":"{assets_path}components\\/modxsdk\\/"}',
+);
