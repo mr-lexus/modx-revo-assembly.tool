@@ -10,10 +10,10 @@
     'novosti/novost-1.html' => 8,
     'novosti/novost-2.html' => 9,
     'novosti/novost-3.html' => 10,
-    'systempage/sitemap.xml' => 28,
     'systempage/sajt-ne-dostupen.html' => 27,
     'systempage/404.html' => 25,
     'systempage/403.html' => 24,
+    'systempage/sitemap.xml' => 28,
   ),
   'resourceMap' => 
   array (
@@ -31,10 +31,10 @@
     ),
     29 => 
     array (
-      0 => 28,
-      1 => 27,
-      2 => 25,
-      3 => 24,
+      0 => 27,
+      1 => 25,
+      2 => 24,
+      3 => 28,
     ),
   ),
   'webLinkMap' => 
@@ -83,22 +83,22 @@
     ),
     'OnDocFormPrerender' => 
     array (
+      29 => '29',
+      50 => '50',
+      52 => '52',
+      18 => '18',
       41 => '41',
       51 => '51',
       31 => '31',
       1 => '1',
       19 => '19',
       32 => '32',
-      29 => '29',
-      50 => '50',
-      52 => '52',
-      18 => '18',
     ),
     'OnDocFormRender' => 
     array (
-      33 => '33',
-      18 => '18',
       27 => '27',
+      18 => '18',
+      33 => '33',
     ),
     'OnDocFormSave' => 
     array (
@@ -123,16 +123,16 @@
     ),
     'OnHandleRequest' => 
     array (
+      30 => '30',
       35 => '35',
       5 => '5',
-      30 => '30',
       49 => '49',
     ),
     'OnLoadWebDocument' => 
     array (
-      40 => '40',
       6 => '6',
       41 => '41',
+      40 => '40',
     ),
     'OnMODXInit' => 
     array (
@@ -178,17 +178,17 @@
     ),
     'OnSiteRefresh' => 
     array (
+      16 => '16',
       48 => '48',
       40 => '40',
       5 => '5',
       28 => '28',
-      16 => '16',
     ),
     'OnSnipFormPrerender' => 
     array (
-      1 => '1',
       36 => '36',
       52 => '52',
+      1 => '1',
     ),
     'OnSnipFormSave' => 
     array (
@@ -200,9 +200,9 @@
     ),
     'OnTempFormPrerender' => 
     array (
+      1 => '1',
       52 => '52',
       36 => '36',
-      1 => '1',
     ),
     'OnTempFormSave' => 
     array (
@@ -214,8 +214,8 @@
     ),
     'OnTVFormPrerender' => 
     array (
-      52 => '52',
       32 => '32',
+      52 => '52',
     ),
     'OnTVFormSave' => 
     array (
@@ -223,35 +223,35 @@
     ),
     'OnTVInputPropertiesList' => 
     array (
-      19 => '19',
-      31 => '31',
       50 => '50',
       51 => '51',
-      33 => '33',
       27 => '27',
       32 => '32',
+      33 => '33',
+      19 => '19',
+      31 => '31',
     ),
     'OnTVInputRenderList' => 
     array (
+      50 => '50',
+      19 => '19',
       27 => '27',
       31 => '31',
       32 => '32',
-      33 => '33',
       51 => '51',
-      50 => '50',
-      19 => '19',
+      33 => '33',
     ),
     'OnTVOutputRenderList' => 
     array (
-      27 => '27',
-      33 => '33',
       31 => '31',
+      33 => '33',
+      27 => '27',
     ),
     'OnTVOutputRenderPropertiesList' => 
     array (
-      33 => '33',
       27 => '27',
       31 => '31',
+      33 => '33',
     ),
     'OnUpdaterCoreRefresh' => 
     array (

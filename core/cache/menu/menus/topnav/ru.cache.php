@@ -358,7 +358,7 @@
       ),
       5 => 
       array (
-        'text' => 'VersionX',
+        'text' => 'Контроль версий',
         'parent' => 'components',
         'action' => '17',
         'description' => 'Отслеживает изменения вашего ценного контента.',

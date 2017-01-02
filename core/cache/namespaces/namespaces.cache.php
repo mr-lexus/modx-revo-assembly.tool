@@ -77,6 +77,12 @@
     'path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/gallery/',
     'assets_path' => '/Users/theboxer/www/modx/pkgs/gallery/assets/components/gallery/',
   ),
+  'googlesitemap' => 
+  array (
+    'name' => 'googlesitemap',
+    'path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/googlesitemap/',
+    'assets_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/assets/components/googlesitemap/',
+  ),
   'imageplus' => 
   array (
     'name' => 'imageplus',
