@@ -1,5 +1,176 @@
 Changelog for pdoTools.
 
+2.7.5 pl
+==============
+- Fenom now managed via composer.
+- [Fenom] Modifier "resource" no longer checks fields of resources in their schema.
+- [Fenom] Modifier "strrev" now can work with arrays.
+- [Fenom] Improved modifier "ismember".
+
+2.7.4 pl
+==============
+- [#242] Added jquery.pdopage.js plugin and minified versions.
+- [#241] [Fenom] Improved the retrieving of TVs for a current resource.
+- [pdoFetch] Restored the checking of possible SQL injections in the &sortby with xPDO 2.5.1.
+
+2.7.3 pl
+==============
+- Improved compatibility with MODX 2.5.2.
+
+2.7.2 pl
+==============
+- [pdoFetch] Some security improvements.
+
+2.7.1 pl
+==============
+- Some security improvements in the connector.php.
+- Fixed bug with registering scripts in styles via Fenom introduced in version 2.7.0.
+
+2.7.0 pl
+==============
+- [Fenom] Updated to the version 2.11.4.
+- [Fenom] Fixed resource cache for scripts and styles registered by Fenom.
+- [Fenom] Added rand() and number_format() to an allowed PHP functions.
+- [Fenom] New output filter "number" (or "number_format").
+
+2.6.5 pl
+==============
+- Fixed undeclared variable (PHP 7.1)
+
+2.6.4 pl
+==============
+- Added escaping of a MODX tags that being processed in the &prepareSnippet.
+- [#239] Improved work of the &decodeJSON option.
+
+2.6.3 pl
+==============
+- Fixed possible E_NOTICE on line 305 pdofetch.class.php.
+- Fixed possible E_NOTICE when "snippet" and "chunk" Fenom modifiers was called.
+
+2.6.2 pl
+==============
+- Fixed possible E_NOTICE on line 1317 pdotools.class.php.
+
+2.6.1 pl
+==============
+- Improved compatibility with PHP 5.3.
+
+2.6.0 pl
+==============
+- [Fenom] The ability to extend Fenom via system event "pdoToolsOnFenomInit".
+
+2.5.6 pl
+==============
+- [pdoFetch] Ability to join TVs not only to the query main class.
+
+2.5.5 pl
+==============
+- Fixed parse of INLINE chunks with "@" symbols.
+
+2.5.4 pl
+==============
+- [#224] Added microMODX::cleanAlias().
+- [#226] [Fenom] Added "declension" modifier.
+
+2.5.3 pl
+==============
+- [#221] Fixed typo in month name.
+- [Fenom] Fixed path to compile dir.
+
+2.5.2 pl
+==============
+- [#220] Cache code of snippet with respect to property set.
+
+2.5.1 pl
+==============
+- Fixed cache of snippets in pdoTools::runSnippet().
+
+2.5.0 pl
+==============
+- Improved support of debugParser.
+- [#209] Improved loading of the models.
+- [Fenom] New modifiers: "snippet" and "chunk".
+- [Fenom] New elements provider: "file".
+- New method pdoTools::runSnippet().
+
+2.4.0 pl
+==============
+- Added snippet pdoArchive.
+- [pdoResources] Faster processing of additional snippet parameters to placeholders.
+- [#123] [pdoMenu] Fixed bug with &displayStart and unpublished root nodes.
+- [#207] [pdoMenu] Fixed &webLinkClass option.
+- [#193] [pdoNeighbors] Added parameter &wrapIfEmpty.
+- [#203] [Fenom] Added more PCRE modifiers.
+
+2.3.5 pl
+==============
+- [pdoFetch] Added escaping of columns names in query.
+
+2.3.4 pl
+==============
+- [#200] [pdoFetch] Fixed &sortbyTV with dot in name.
+
+2.3.3 pl
+==============
+- Added system plugin for "autoload" of main classes with respect to their paths in system settings.
+
+2.3.2 pl
+==============
+- [#196] [pdoPage] Added workaround to support ClientConfig tags in ajax mode.
+- [Fenom] Added general MODX output filters as Fenom modifiers.
+- [Fenom] Implemented autoload of modifiers from snippets.
+- [Fenom] Removed system setting "pdotools_fenom_modifiers".
+
+2.3.1 pl
+==============
+- [pdoSitemap] Lightning fast work chunks processing with &scheme=`uri`.
+- [Fenom] Improved check of syntax before processing.
+
+2.3.0 pl
+==============
+- Removed shortcuts from system core.
+- PSR-2.
+- [Fenom] Added default modifiers: "url" and "lexicon".
+- [pdoCrumbs] Changed default chunks to ul -> li.
+- [#190] [pdoSitemap] Changed date format to ISO 8601.
+
+2.2.8 pl
+==============
+- [Fenom] Use modResource::getContent() method to get content of current resource in {$_modx->resource}.
+
+2.2.7 pl
+==============
+- [pdoPage] Ability to get access to a javascript configs from 3rd party scripts.
+
+2.2.6 pl
+==============
+- [#184] [Fenom] Updated to version 2.8.2.
+
+2.2.5 pl
+==============
+- [#182] [pdoTitle] Added passing a parameters into nested pdoCrumbs.
+- [pdoSitemap] Added processing of MODX tags if needed.
+- Added method pdoTools::makeUrl().
+- [#181] New url schema type - "uri".
+
+2.2.4 pl
+==============
+- [Fenom] Fixed speed issues when MODX snippets are run as Fenom modifiers.
+- [pdoUsers] Fixed overwrite modUser.id by modUserProfile.id.
+
+2.2.3 pl
+==============
+- [pdoPage] Fixed processing of uncached conditions in chunks when ajax mode is enabled.
+
+2.2.2 pl
+==============
+- [pdoPage] Added new parameter &pageLinkScheme.
+
+2.2.1 pl
+==============
+- [#155] [pdoPage] Added new parameter &ajaxHistory.
+- [pdoPage] Added connector for requests in ajax mode.
+
 2.2.0 pl
 ==============
 - [#175] [pdoFetch] Ability to specify sequence of table joins.

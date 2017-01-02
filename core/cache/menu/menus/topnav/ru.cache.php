@@ -218,19 +218,19 @@
     array (
       0 => 
       array (
-        'text' => 'Обновление MODX',
+        'text' => 'Установщик',
         'parent' => 'components',
-        'action' => '1',
-        'description' => 'Дополнение для обновления версии MODX',
-        'icon' => 'images/icons/plugin.gif',
+        'action' => 'workspaces',
+        'description' => 'Управление приложениями и репозиториями',
+        'icon' => '',
         'menuindex' => 0,
         'params' => '',
         'handler' => '',
-        'permissions' => '',
+        'permissions' => 'packages',
         'namespace' => 'core',
-        'action_controller' => 'index',
-        'action_namespace' => 'modupdater',
-        'id' => 'modupdater',
+        'action_controller' => NULL,
+        'action_namespace' => NULL,
+        'id' => 'installer',
         'children' => 
         array (
         ),
@@ -238,29 +238,9 @@
       ),
       1 => 
       array (
-        'text' => 'dbAdmin',
-        'parent' => 'components',
-        'action' => '2',
-        'description' => 'Управление таблицами БД',
-        'icon' => 'images/icons/plugin.gif',
-        'menuindex' => 0,
-        'params' => '',
-        'handler' => '',
-        'permissions' => '',
-        'namespace' => 'core',
-        'action_controller' => 'index',
-        'action_namespace' => 'dbadmin',
-        'id' => 'dbadmin',
-        'children' => 
-        array (
-        ),
-        'controller' => '',
-      ),
-      2 => 
-      array (
         'text' => 'Console',
         'parent' => 'components',
-        'action' => '4',
+        'action' => '1',
         'description' => 'Консоль для выполнения php-кода',
         'icon' => 'images/icons/plugin.gif',
         'menuindex' => 0,
@@ -276,11 +256,11 @@
         ),
         'controller' => '',
       ),
-      3 => 
+      2 => 
       array (
         'text' => 'Виды Коллекции',
         'parent' => 'components',
-        'action' => '9',
+        'action' => '8',
         'description' => 'Определите виды для таблицы дочерних ресурсов коллекции.',
         'icon' => '',
         'menuindex' => 0,
@@ -296,14 +276,134 @@
         ),
         'controller' => '',
       ),
+      3 => 
+      array (
+        'text' => 'Gallery',
+        'parent' => 'components',
+        'action' => '18',
+        'description' => 'Управление альбомами.',
+        'icon' => 'images/icons/plugin.gif',
+        'menuindex' => 0,
+        'params' => '',
+        'handler' => '',
+        'permissions' => '',
+        'namespace' => 'core',
+        'action_controller' => 'index',
+        'action_namespace' => 'gallery',
+        'id' => 'gallery',
+        'children' => 
+        array (
+        ),
+        'controller' => '',
+      ),
       4 => 
+      array (
+        'text' => 'miniShop2',
+        'parent' => 'components',
+        'action' => 'mgr/orders',
+        'description' => 'Продвинутый интернет-магазин',
+        'icon' => '<i class="icon-shopping-cart icon icon-large"></i>',
+        'menuindex' => 0,
+        'params' => '',
+        'handler' => '',
+        'permissions' => '',
+        'namespace' => 'minishop2',
+        'action_controller' => NULL,
+        'action_namespace' => NULL,
+        'id' => 'minishop2',
+        'children' => 
+        array (
+          0 => 
+          array (
+            'text' => 'Заказы',
+            'parent' => 'minishop2',
+            'action' => 'mgr/orders',
+            'description' => 'Управление заказами',
+            'icon' => '',
+            'menuindex' => 0,
+            'params' => '',
+            'handler' => '',
+            'permissions' => '',
+            'namespace' => 'minishop2',
+            'action_controller' => NULL,
+            'action_namespace' => NULL,
+            'id' => 'ms2_orders',
+            'children' => 
+            array (
+            ),
+            'controller' => '',
+          ),
+          1 => 
+          array (
+            'text' => 'Настройки',
+            'parent' => 'minishop2',
+            'action' => 'mgr/settings',
+            'description' => 'Статусы заказов, параметры оплаты и доставки',
+            'icon' => '',
+            'menuindex' => 1,
+            'params' => '',
+            'handler' => '',
+            'permissions' => '',
+            'namespace' => 'minishop2',
+            'action_controller' => NULL,
+            'action_namespace' => NULL,
+            'id' => 'ms2_settings',
+            'children' => 
+            array (
+            ),
+            'controller' => '',
+          ),
+        ),
+        'controller' => '',
+      ),
+      5 => 
+      array (
+        'text' => 'VersionX',
+        'parent' => 'components',
+        'action' => '17',
+        'description' => 'Отслеживает изменения вашего ценного контента.',
+        'icon' => 'images/icons/plugin.gif',
+        'menuindex' => 0,
+        'params' => '',
+        'handler' => '',
+        'permissions' => '',
+        'namespace' => 'core',
+        'action_controller' => 'controllers/index',
+        'action_namespace' => 'versionx',
+        'id' => 'versionx',
+        'children' => 
+        array (
+        ),
+        'controller' => '',
+      ),
+      6 => 
+      array (
+        'text' => 'Тикеты',
+        'parent' => 'components',
+        'action' => '15',
+        'description' => '',
+        'icon' => 'images/icons/plugin.gif',
+        'menuindex' => 3,
+        'params' => '',
+        'handler' => '',
+        'permissions' => '',
+        'namespace' => 'core',
+        'action_controller' => 'index',
+        'action_namespace' => 'tickets',
+        'id' => 'tickets',
+        'children' => 
+        array (
+        ),
+        'controller' => '',
+      ),
+      7 => 
       array (
         'text' => 'MIGX',
         'parent' => 'components',
         'action' => 'index',
         'description' => '',
         'icon' => '',
-        'menuindex' => 0,
+        'menuindex' => 5,
         'params' => '&configs=packagemanager||migxconfigs||setup',
         'handler' => '',
         'permissions' => '',
@@ -316,21 +416,41 @@
         ),
         'controller' => '',
       ),
-      5 => 
+      8 => 
       array (
-        'text' => 'FormIt',
+        'text' => 'VirtualPage',
         'parent' => 'components',
-        'action' => '8',
-        'description' => 'Просмотреть все заполненные формы',
+        'action' => '10',
+        'description' => '',
         'icon' => 'images/icons/plugin.gif',
-        'menuindex' => 0,
+        'menuindex' => 6,
         'params' => '',
         'handler' => '',
         'permissions' => '',
         'namespace' => 'core',
         'action_controller' => 'index',
-        'action_namespace' => 'formit',
-        'id' => 'formit',
+        'action_namespace' => 'virtualpage',
+        'id' => 'virtualpage',
+        'children' => 
+        array (
+        ),
+        'controller' => '',
+      ),
+      9 => 
+      array (
+        'text' => 'Обновление MODX',
+        'parent' => 'components',
+        'action' => '11',
+        'description' => '',
+        'icon' => 'images/icons/plugin.gif',
+        'menuindex' => 7,
+        'params' => '',
+        'handler' => '',
+        'permissions' => '',
+        'namespace' => 'core',
+        'action_controller' => 'index',
+        'action_namespace' => 'modupdater',
+        'id' => 'modupdater',
         'children' => 
         array (
         ),
@@ -378,12 +498,52 @@
       ),
       1 => 
       array (
+        'text' => 'Очистить кэш',
+        'parent' => 'manage',
+        'action' => '',
+        'description' => 'Очистить кэш сайта.',
+        'icon' => '',
+        'menuindex' => 1,
+        'params' => '',
+        'handler' => 'MODx.clearCache(); return false;',
+        'permissions' => 'empty_cache',
+        'namespace' => 'core',
+        'action_controller' => NULL,
+        'action_namespace' => NULL,
+        'id' => 'refresh_site',
+        'children' => 
+        array (
+          0 => 
+          array (
+            'text' => 'Обновить URI-ссылки',
+            'parent' => 'refresh_site',
+            'action' => '',
+            'description' => 'Перегенерировать URI ресурсов',
+            'icon' => '',
+            'menuindex' => 0,
+            'params' => '',
+            'handler' => 'MODx.refreshURIs(); return false;',
+            'permissions' => 'empty_cache',
+            'namespace' => 'core',
+            'action_controller' => NULL,
+            'action_namespace' => NULL,
+            'id' => 'refreshuris',
+            'children' => 
+            array (
+            ),
+            'controller' => '',
+          ),
+        ),
+        'controller' => '',
+      ),
+      2 => 
+      array (
         'text' => 'Снять блокировки',
         'parent' => 'manage',
         'action' => '',
         'description' => 'Будут сняты все блокировки со страниц сайта. Эти блокировки являются результатом того, что другие пользователи редактируют эти страницы.',
         'icon' => '',
-        'menuindex' => 1,
+        'menuindex' => 2,
         'params' => '',
         'handler' => '
 MODx.msg.confirm({
@@ -412,14 +572,14 @@ MODx.msg.confirm({
         ),
         'controller' => '',
       ),
-      2 => 
+      3 => 
       array (
         'text' => 'Перезагрузить права доступа',
         'parent' => 'manage',
         'action' => '',
         'description' => 'Перезагрузить все права доступа и очистить кэш.',
         'icon' => '',
-        'menuindex' => 2,
+        'menuindex' => 3,
         'params' => '',
         'handler' => 'MODx.msg.confirm({
     title: _(\'flush_access\')
@@ -442,14 +602,14 @@ MODx.msg.confirm({
         ),
         'controller' => '',
       ),
-      3 => 
+      4 => 
       array (
         'text' => 'Завершить все сеансы',
         'parent' => 'manage',
         'action' => '',
         'description' => 'Завершить все сеансы работы пользователей и произвести принудительный выход из системы всех пользователей.',
         'icon' => '',
-        'menuindex' => 3,
+        'menuindex' => 4,
         'params' => '',
         'handler' => 'MODx.msg.confirm({
     title: _(\'flush_sessions\')
@@ -472,14 +632,14 @@ MODx.msg.confirm({
         ),
         'controller' => '',
       ),
-      4 => 
+      5 => 
       array (
         'text' => 'Отчёты',
         'parent' => 'manage',
         'action' => '',
         'description' => 'Различные отчеты MODX для администратора',
         'icon' => '',
-        'menuindex' => 4,
+        'menuindex' => 5,
         'params' => '',
         'handler' => '',
         'permissions' => 'menu_reports',
@@ -577,19 +737,19 @@ MODx.msg.confirm({
   ),
   4 => 
   array (
-    'text' => 'Установщик',
+    'text' => 'Кэш',
     'parent' => 'topnav',
-    'action' => 'workspaces',
+    'action' => '',
     'description' => '',
     'icon' => '',
-    'menuindex' => 4,
+    'menuindex' => 5,
     'params' => '',
-    'handler' => '',
-    'permissions' => 'packages',
-    'namespace' => 'core',
+    'handler' => 'MODx.clearCache(); return false;',
+    'permissions' => '',
+    'namespace' => '',
     'action_controller' => NULL,
     'action_namespace' => NULL,
-    'id' => 'installer',
+    'id' => 'Кэш',
     'children' => 
     array (
     ),
@@ -597,41 +757,21 @@ MODx.msg.confirm({
   ),
   5 => 
   array (
-    'text' => 'Очистить кэш',
+    'text' => 'Конфигурация',
     'parent' => 'topnav',
-    'action' => '',
-    'description' => 'Очистить кэш сайта.',
+    'action' => '12',
+    'description' => '',
     'icon' => '',
-    'menuindex' => 5,
+    'menuindex' => 6,
     'params' => '',
-    'handler' => 'MODx.clearCache(); return false;',
-    'permissions' => 'empty_cache',
+    'handler' => '',
+    'permissions' => '',
     'namespace' => 'core',
-    'action_controller' => NULL,
-    'action_namespace' => NULL,
-    'id' => 'refresh_site',
+    'action_controller' => 'index',
+    'action_namespace' => 'clientconfig',
+    'id' => 'clientconfig',
     'children' => 
     array (
-      0 => 
-      array (
-        'text' => 'Обновить URI-ссылки',
-        'parent' => 'refresh_site',
-        'action' => '',
-        'description' => 'Перегенерировать URI ресурсов',
-        'icon' => '',
-        'menuindex' => 0,
-        'params' => '',
-        'handler' => 'MODx.refreshURIs(); return false;',
-        'permissions' => 'empty_cache',
-        'namespace' => 'core',
-        'action_controller' => NULL,
-        'action_namespace' => NULL,
-        'id' => 'refreshuris',
-        'children' => 
-        array (
-        ),
-        'controller' => '',
-      ),
     ),
     'controller' => '',
   ),

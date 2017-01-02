@@ -1,0 +1,14 @@
+Changelog for msOptionsPrice.
+
+msOptionsPrice 0.0.3
+==============
+- Fixed bugs in front.js
+- Fixed bugs in msOnBeforeAddToCart
+
+msOptionsPrice 0.0.2
+==============
+- add formatting price from minishop.
+
+msOptionsPrice 0.0.1
+==============
+- Initial release.

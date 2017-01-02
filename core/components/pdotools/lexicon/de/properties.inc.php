@@ -5,7 +5,7 @@
  * @package pdotools
  * @subpackage lexicon
  * @language de
- * 
+ *
  * pdoTools translated to German by Jan-Christoph Ihrens (enigmatic_user, enigma@lunamail.de)
  */
 $_lang['pdotools_prop_context'] = 'Gibt an, in welchem Kontext gesucht werden soll.';
@@ -89,7 +89,7 @@ $_lang['pdotools_prop_topLevel'] = 'Wählt das Elternelement der angegebenen "id
 
 $_lang['pdotools_prop_forceXML'] = 'Erzwingt die Ausgabe der Seite im XML-Format.';
 $_lang['pdotools_prop_sitemapSchema'] = 'Schema der Sitemap.';
-$_lang['pdotools_prop_scheme'] = 'Schema der URL-Generierung, wird an modX::makeUrl() übergeben.';
+$_lang['pdotools_prop_scheme'] = 'Schema der Generierung der links: "uri" für die Ersetzung der Dokument-uri (sehr schnell) oder ein parameter für modX::makeUrl().';
 
 $_lang['pdotools_prop_field_default'] = 'Geben Sie ein zusätzliches Ressourcen-Feld an, dessen Inhalt zurückgegeben wird, wenn das in "field" angegebene Feld der Ressource leer ist.';
 $_lang['pdotools_prop_field_output'] = 'Der hier eingegebene Text wird zurückgegeben, wenn die in "default" und "field" definierten Felder der Ressource leer sind.';
@@ -105,6 +105,7 @@ $_lang['pdotools_prop_page'] = 'Die Nummer der Seite für die Ausgabe. Hat Vorra
 $_lang['pdotools_prop_pageLimit'] = 'Anzahl der Links zu anderen Seiten. Ist dieser Wert größer oder gleich 7, wird der erweiterte Modus eingeschaltet.';
 $_lang['pdotools_prop_pageNavVar'] = 'Name des Platzhalters für die Ausgabe der Paginierung (Links zu anderen Seiten).';
 $_lang['pdotools_prop_pageCountVar'] = 'Name des Platzhalters für die Ausgabe der Anzahl der Seiten.';
+$_lang['pdotools_prop_pageLinkScheme'] = 'Schema der generation der link zur Seite. Sie können die Platzhalter [[+pageVarKey]] und [[+page]]';
 $_lang['pdotools_prop_pageVarKey'] = 'Der Name des Parameters, der in der URL die Seitennummer angibt.';
 $_lang['pdotools_prop_plPrefix'] = 'Präfix für Platzhalter; Standard ist "wf.".';
 
@@ -165,6 +166,7 @@ $_lang['pdotools_prop_ajaxElemPagination'] = 'jQuery selector für element mit P
 $_lang['pdotools_prop_ajaxElemLink'] = 'jQuery selector für die Paginierung links.';
 $_lang['pdotools_prop_ajaxElemMore'] = 'jQuery selector für "laden" - button in ajaxMode = button.';
 $_lang['pdotools_prop_ajaxTplMore'] = 'Stück für templating "mehr Schaltfläche" wenn ajaxMode = button. Muss eine Selektor angegeben in "ajaxElemMore".';
+$_lang['pdotools_prop_ajaxHistory'] = 'Speichern Sie die Seite Nummer in der url, wenn Sie arbeiten in ajax-Modus.';
 
 $_lang['pdotools_prop_frontend_js'] = 'Link auf javascript für die Belastung durch das snippet.';
 $_lang['pdotools_prop_frontend_css'] = 'Link auf css-Stile für das laden der snippet.';
@@ -181,3 +183,9 @@ $_lang['pdotools_prop_minQuery'] = 'Die minimale Länge der Suchanfrage angezeig
 $_lang['pdotools_prop_queryVarKey'] = 'Der name der variable für den Suchbegriff in der url.';
 $_lang['pdotools_prop_titleField'] = 'Feld der aktuellen Ressource angezeigt in den Titel der Seite.';
 $_lang['pdotools_prop_strictMode'] = 'Strict-Modus. pdoPage tun leitet beim laden nicht existierenden Seiten.';
+
+$_lang['pdotools_prop_tplYear'] = 'Template für das Jahr';
+$_lang['pdotools_prop_tplMonth'] = 'Template für den Monat';
+$_lang['pdotools_prop_tplDay'] = 'Vorlage für das Tag';
+$_lang['pdotools_prop_dateField'] = 'Das Feld der Ressource für den Erhalt von Dokument-Datum: createdon, publishedon, oder editedon.';
+$_lang['pdotools_prop_dateFormat'] = 'Datum-format für die Funktion strftime()';

@@ -128,6 +128,7 @@
   'element_duplicate' => 'Duplicate Element',
   'element_duplicate_values' => 'Duplicate Resource Values?',
   'element_name_new' => 'Name of New Element',
+  'element_caption_new' => 'Caption of New Element',
   'elements' => 'Elements',
   'email' => 'Email',
   'empty_recycle_bin' => 'Remove Deleted Resources',

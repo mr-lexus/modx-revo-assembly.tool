@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modtelegram',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9209cb8d93f91a592fe1477bc7456471',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'aec23335b45bae584a03f8a44ec920d1',
+  'native_key' => 'modtelegram_web_hook_action',
+  'object' => '{"key":"modtelegram_web_hook_action","value":"action,login,logout,chatin,chatout,reply,history,status,location,removeall","xtype":"textarea","namespace":"modtelegram","area":"modtelegram_main","editedon":null}',
+);

@@ -14,3 +14,11 @@ ModConsole.page.Home = function(config) {
 };
 Ext.extend(ModConsole.page.Home,MODx.Component);
 Ext.reg('mod-console-page-home',ModConsole.page.Home);
+
+var fixHeight = function() {
+	var elm = document.getElementById('mod-console-coderesult');
+	// console.log(elm);
+	var parentCoderesult = elm.parentNode;
+	parentCoderesult.style.height = 'auto';
+}
+setTimeout(fixHeight, 3000);

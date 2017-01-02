@@ -339,6 +339,7 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
         $c = $resource->xpdo->newQuery('modTemplateVar');
         $c->query['distinct'] = 'DISTINCT';
         $c->select($resource->xpdo->getSelectColumns('modTemplateVar', 'modTemplateVar'));
+        $c->select($resource->xpdo->getSelectColumns('modTemplateVarTemplate', 'tvtpl', '', array('rank')));
         if ($resource->isNew()) {
             $c->select(array(
                 'modTemplateVar.default_text AS value',
@@ -947,7 +948,6 @@ class modResource extends modAccessibleSimpleObject implements modResourceInterf
             'id:!=' => $this->get('id'),
             'uri' => $aliasPath,
             'deleted' => false,
-            'published' => true
         );
         if (!empty($contextKey)) {
             $where['context_key'] = $contextKey;

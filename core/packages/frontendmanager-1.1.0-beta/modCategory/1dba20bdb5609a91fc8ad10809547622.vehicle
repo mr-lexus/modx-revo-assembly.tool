@@ -1,0 +1,139 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '1f586ac98c2639bb608602438f07db7a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.frontendmanager","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"frontendManager\\" class=\\"fm-panel\\" >\\n\\t<a href=\\"[[++manager_url]]\\" target=\\"_blank\\" class=\\"fm-logo\\"><img src=\\"[[++manager_url]]templates\\/default\\/images\\/modx-icon-color.svg\\"><\\/a>\\n\\t<a href=\\"[[++manager_url]]\\" target=\\"_blank\\" class=\\"fm-mode\\"><span class=\\"fm-icon-hide\\"><img src=\\"[[++manager_url]]templates\\/default\\/images\\/modx-icon-color.svg\\"><\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=resource\\/update&id={$_modx->resource.id}\\" data-action=\\"iframe\\"><span class=\\"fm-icon-edit\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_edit\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=security\\/user\\" data-action=\\"iframe\\"><span class=\\"fm-icon-user\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_users\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=mgr\\/orders&namespace=minishop2\\" data-action=\\"iframe\\"><span class=\\"fm-icon-ms2\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_ms2\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?id=0&a=context\\/update&key={$_modx->context.key}\\" data-action=\\"iframe\\"><span class=\\"fm-icon-context\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_context\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/settings\\" data-action=\\"iframe\\"><span class=\\"fm-icon-settings\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_settings\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/event\\" data-action=\\"iframe\\"><span class=\\"fm-icon-log\\"><\\/span><span class=\\"fm-link-text\\">{\'frontendmanager_btn_log\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/refresh_site\\" data-action=\\"iframe\\"><span class=\\"fm-icon-cache\\"><\\/span><span class=\\"fm-link-text\\">{\'frontendmanager_btn_cache\' | lexicon}<\\/span><\\/a>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/frontendmanager\\/elements\\/chunks\\/chunk.frontendmanager.tpl","content":"<div id=\\"frontendManager\\" class=\\"fm-panel\\" >\\n\\t<a href=\\"[[++manager_url]]\\" target=\\"_blank\\" class=\\"fm-logo\\"><img src=\\"[[++manager_url]]templates\\/default\\/images\\/modx-icon-color.svg\\"><\\/a>\\n\\t<a href=\\"[[++manager_url]]\\" target=\\"_blank\\" class=\\"fm-mode\\"><span class=\\"fm-icon-hide\\"><img src=\\"[[++manager_url]]templates\\/default\\/images\\/modx-icon-color.svg\\"><\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=resource\\/update&id={$_modx->resource.id}\\" data-action=\\"iframe\\"><span class=\\"fm-icon-edit\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_edit\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=security\\/user\\" data-action=\\"iframe\\"><span class=\\"fm-icon-user\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_users\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=mgr\\/orders&namespace=minishop2\\" data-action=\\"iframe\\"><span class=\\"fm-icon-ms2\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_ms2\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?id=0&a=context\\/update&key={$_modx->context.key}\\" data-action=\\"iframe\\"><span class=\\"fm-icon-context\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_context\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/settings\\" data-action=\\"iframe\\"><span class=\\"fm-icon-settings\\"><\\/span> <span class=\\"fm-link-text\\">{\'frontendmanager_btn_settings\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/event\\" data-action=\\"iframe\\"><span class=\\"fm-icon-log\\"><\\/span><span class=\\"fm-link-text\\">{\'frontendmanager_btn_log\' | lexicon}<\\/span><\\/a>\\n\\t<a href=\\"[[++manager_url]]?a=system\\/refresh_site\\" data-action=\\"iframe\\"><span class=\\"fm-icon-cache\\"><\\/span><span class=\\"fm-link-text\\">{\'frontendmanager_btn_cache\' | lexicon}<\\/span><\\/a>\\n<\\/div>\\n"}',
+        'guid' => '49562e3d6eceb71b0e8d097c15ff7051',
+        'native_key' => 0,
+        'signature' => '35d7c28230a3dbd77ad01943864096b6',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '15a695c7495316480559c5ad41117c25' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"frontendmanager","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"if (!$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'Administrator\')) return;\\nswitch ($modx->event->name) {\\n    case \'OnWebPagePrerender\':\\n        $frontendManager = $modx->getService(\'frontendmanager\',\'frontendManager\', MODX_CORE_PATH . \'components\\/frontendmanager\\/model\\/frontendmanager\\/\', array());\\n        if(!$frontendManager) return;\\n\\t\\t$contentTypes = explode(\',\', $modx->getOption(\'frontendmanager_contenttypes\'));\\n        if (in_array($modx->resource->content_type, $contentTypes)) {\\n\\t\\t\\t$modx->resource->_output .=  $frontendManager->initialize($modx->context->key);\\n        }\\n        break;\\n    case \'OnBeforeManagerPageInit\':\\n        if ($_GET[\'frame\']) {\\n\\t\\t\\t$modx->regClientCSS(MODX_ASSETS_URL.\'components\\/frontendmanager\\/css\\/mgr\\/\'.$modx->getOption(\'frontendmanager_manager_css\', NULL, \'manager.css\'));\\n\\t\\t\\t$modx->regClientStartupScript(MODX_ASSETS_URL.\'components\\/frontendmanager\\/js\\/mgr\\/\'.$modx->getOption(\'frontendmanager_manager_js\', NULL, \'manager.js\'));\\n        }\\n        break;\\n    default:\\n        break;\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/frontendmanager\\/elements\\/plugins\\/plugin.frontendmanager.php","content":"if (!$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'Administrator\')) return;\\nswitch ($modx->event->name) {\\n    case \'OnWebPagePrerender\':\\n        $frontendManager = $modx->getService(\'frontendmanager\',\'frontendManager\', MODX_CORE_PATH . \'components\\/frontendmanager\\/model\\/frontendmanager\\/\', array());\\n        if(!$frontendManager) return;\\n\\t\\t$contentTypes = explode(\',\', $modx->getOption(\'frontendmanager_contenttypes\'));\\n        if (in_array($modx->resource->content_type, $contentTypes)) {\\n\\t\\t\\t$modx->resource->_output .=  $frontendManager->initialize($modx->context->key);\\n        }\\n        break;\\n    case \'OnBeforeManagerPageInit\':\\n        if ($_GET[\'frame\']) {\\n\\t\\t\\t$modx->regClientCSS(MODX_ASSETS_URL.\'components\\/frontendmanager\\/css\\/mgr\\/\'.$modx->getOption(\'frontendmanager_manager_css\', NULL, \'manager.css\'));\\n\\t\\t\\t$modx->regClientStartupScript(MODX_ASSETS_URL.\'components\\/frontendmanager\\/js\\/mgr\\/\'.$modx->getOption(\'frontendmanager_manager_js\', NULL, \'manager.js\'));\\n        }\\n        break;\\n    default:\\n        break;\\n}\\nreturn;"}',
+        'guid' => '5922507cc40774b2c98b49da3dccf5d4',
+        'native_key' => NULL,
+        'signature' => 'acf30224689223204843a43c4cb80899',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '847af1ba3c1df61c4ad4c1781bd9c54d' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPagePrerender","priority":0,"propertyset":0}',
+              'guid' => '912a9efc78e8106d46d9c2381a4fef36',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPagePrerender',
+              ),
+              'signature' => 'b861866c77d42ec27f5c991ea4d008c2',
+            ),
+            'f366bddbad44b1f97c1f3fc3d91f549e' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnBeforeManagerPageInit","priority":0,"propertyset":0}',
+              'guid' => 'f567dbb8f998f28c40f6251895ef6931',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnBeforeManagerPageInit',
+              ),
+              'signature' => 'a4b0e55fee2aabb02cad84c708b649df',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'frontendmanager',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"frontendmanager-1.1.0-beta\\/modCategory\\/1dba20bdb5609a91fc8ad10809547622\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"frontendmanager"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"frontendmanager-1.1.0-beta\\/modCategory\\/1dba20bdb5609a91fc8ad10809547622\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"frontendmanager"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"frontendmanager-1.1.0-beta\\/modCategory\\/1dba20bdb5609a91fc8ad10809547622.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b7f17b139c7c670020a70a7e6304def9',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '1dba20bdb5609a91fc8ad10809547622',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"frontendManager","rank":0}',
+);

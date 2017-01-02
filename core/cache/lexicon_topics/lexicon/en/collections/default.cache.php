@@ -124,6 +124,9 @@
   'collections.template.export_more' => 'Export views',
   'collections.template.export' => 'Export view',
   'collections.template.import' => 'Import views',
+  'collections.template.search_query_exclude_tvs' => 'Search - Exclude TV columns',
+  'collections.template.search_query_exclude_tagger' => 'Search - Exclude Tagger',
+  'collections.template.search_query_title_only' => 'Search - Title only',
   'collections.template.column.none' => 'This view doesn\'t have columns yet.',
   'collections.template.column.name' => 'Name',
   'collections.template.column.label' => 'Label',
@@ -160,5 +163,5 @@
   'collections.err.template_ae_name' => 'Template with this name already exists.',
   'collections.err.column_dot_name' => 'Column name can\'t contain a dot.',
   'collections.err.template_ns_label' => 'Label is not specified.',
-  'collections.err.permanent_sort' => 'Permanent sort can\'t contain an <strong>everytime</strong>, a <strong>[[+column]]</strong> or (if filled) <strong>no</stron> sort field condition to use drag & drop sorting.',
+  'collections.err.permanent_sort' => 'Permanent sort can\'t contain an <strong>everytime</strong>, a <strong>[[+column]]</strong> or (if filled) <strong>no</strong> sort field condition to use drag & drop sorting.',
 );

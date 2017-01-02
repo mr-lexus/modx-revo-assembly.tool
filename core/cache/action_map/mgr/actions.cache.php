@@ -1,7 +1,20 @@
 <?php  return array (
-  9 => 
+  12 => 
   array (
-    'id' => '9',
+    'id' => '12',
+    'namespace' => 'clientconfig',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'clientconfig:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'clientconfig',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/clientconfig/',
+    'namespace_assets_path' => '',
+  ),
+  8 => 
+  array (
+    'id' => '8',
     'namespace' => 'collections',
     'controller' => 'index',
     'haslayout' => '1',
@@ -9,12 +22,12 @@
     'assets' => '',
     'help_url' => '',
     'namespace_name' => 'collections',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/collections/',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/collections/',
     'namespace_assets_path' => '{assets_path}components/collections/',
   ),
-  4 => 
+  1 => 
   array (
-    'id' => '4',
+    'id' => '1',
     'namespace' => 'console',
     'controller' => 'console',
     'haslayout' => '1',
@@ -22,38 +35,25 @@
     'assets' => '',
     'help_url' => '',
     'namespace_name' => 'console',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/console/',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/console/',
     'namespace_assets_path' => '{assets_path}components/console/',
   ),
-  2 => 
+  18 => 
   array (
-    'id' => '2',
-    'namespace' => 'dbadmin',
+    'id' => '18',
+    'namespace' => 'gallery',
     'controller' => 'index',
     'haslayout' => '1',
-    'lang_topics' => 'dbadmin:default',
+    'lang_topics' => 'gallery:default',
     'assets' => '',
     'help_url' => '',
-    'namespace_name' => 'dbadmin',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/dbadmin/',
-    'namespace_assets_path' => '{base_path}dbAdmin/assets/components/dbadmin/',
+    'namespace_name' => 'gallery',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/gallery/',
+    'namespace_assets_path' => '/Users/theboxer/www/modx/pkgs/gallery/assets/components/gallery/',
   ),
-  8 => 
+  9 => 
   array (
-    'id' => '8',
-    'namespace' => 'formit',
-    'controller' => 'index',
-    'haslayout' => '1',
-    'lang_topics' => 'formit:mgr',
-    'assets' => '',
-    'help_url' => '',
-    'namespace_name' => 'formit',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/formit/',
-    'namespace_assets_path' => '{assets_path}components/formit/',
-  ),
-  7 => 
-  array (
-    'id' => '7',
+    'id' => '9',
     'namespace' => 'migx',
     'controller' => 'index',
     'haslayout' => '0',
@@ -61,12 +61,12 @@
     'assets' => '',
     'help_url' => '',
     'namespace_name' => 'migx',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/migx/',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/migx/',
     'namespace_assets_path' => '{assets_path}components/migx/',
   ),
-  1 => 
+  11 => 
   array (
-    'id' => '1',
+    'id' => '11',
     'namespace' => 'modupdater',
     'controller' => 'index',
     'haslayout' => '1',
@@ -74,7 +74,46 @@
     'assets' => '',
     'help_url' => '',
     'namespace_name' => 'modupdater',
-    'namespace_path' => '/home/lexus/server/tools/modx-revo-assembly.tool/core/components/modupdater/',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/modupdater/',
+    'namespace_assets_path' => '',
+  ),
+  15 => 
+  array (
+    'id' => '15',
+    'namespace' => 'tickets',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'tickets:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'tickets',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/tickets/',
+    'namespace_assets_path' => '',
+  ),
+  17 => 
+  array (
+    'id' => '17',
+    'namespace' => 'versionx',
+    'controller' => 'controllers/index',
+    'haslayout' => '1',
+    'lang_topics' => 'versionx:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'versionx',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/versionx/',
+    'namespace_assets_path' => '',
+  ),
+  10 => 
+  array (
+    'id' => '10',
+    'namespace' => 'virtualpage',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'virtualpage:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'virtualpage',
+    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/virtualpage/',
     'namespace_assets_path' => '',
   ),
 );

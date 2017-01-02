@@ -1,0 +1,53 @@
+Changelog for modTelegram.
+
+1.0.12-beta - (02.12.2016)
+==============
+- Add "modTelegram.user.info" chunk
+
+1.0.11-beta - (21.08.2016)
+==============
+- Add "pusherhook"
+- Add "user chat out" event
+
+1.0.10-beta - (20.08.2016)
+==============
+- Improvements "lexicon"
+
+1.0.9-beta - (17.08.2016)
+==============
+- Add "UNIQUE_KEY" for "group"
+- Improvement action "/status"
+
+1.0.8-beta - (17.08.2016)
+==============
+- Add "Telegram manager" group
+
+1.0.7-beta - (17.08.2016)
+==============
+- Add "removeall" action
+
+1.0.6-beta - (16.08.2016)
+==============
+- Add clear "message", "chat" on "/chatout"
+- Add clear "message", "chat" on "/logout"
+
+1.0.5-beta - (16.08.2016)
+==============
+- Remove "pusher cluster"
+
+1.0.4-beta - (16.08.2016)
+==============
+- Fix "vendors"
+
+1.0.3-beta - (15.08.2016)
+==============
+- Fix "login"
+- Fix "mysql.schema"
+
+1.0.2-beta - (15.08.2016)
+==============
+- Fix EventSource
+
+1.0.1-beta - (15.08.2016)
+==============
+- Initial

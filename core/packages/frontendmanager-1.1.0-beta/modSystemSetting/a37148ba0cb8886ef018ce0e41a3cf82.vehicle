@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'frontendmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0390cd2c3237058bfee5c5ebe1b077e8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a37148ba0cb8886ef018ce0e41a3cf82',
+  'native_key' => 'frontendmanager_manager_css',
+  'object' => '{"key":"frontendmanager_manager_css","value":"manager.css","xtype":"textfield","namespace":"frontendmanager","area":"frontendmanager_manager","editedon":null}',
+);

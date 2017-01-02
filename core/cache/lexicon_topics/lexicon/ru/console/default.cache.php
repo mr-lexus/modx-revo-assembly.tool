@@ -3,6 +3,8 @@
   'console_desc' => 'Консоль для выполнения php-кода',
   'console_tab' => 'Редактор php-кода',
   'console_exec' => 'Выполнить',
+  'console_report' => 'Отчет выполнения',
+  'console_show_errors' => 'Показывать ошибки',
   'console_formated_result' => 'Результат',
   'console_source_result' => 'Исходный код',
   'console_save' => 'Сохранить',

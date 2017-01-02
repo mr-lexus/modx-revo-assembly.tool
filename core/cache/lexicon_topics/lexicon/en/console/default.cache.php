@@ -3,6 +3,8 @@
   'console_desc' => 'Console for execution php-code',
   'console_tab' => 'PHP Codeeditor',
   'console_exec' => 'Execute',
+  'console_report' => 'Execution report',
+  'console_show_errors' => 'Show errors',
   'console_formated_result' => 'Formated result',
   'console_source_result' => 'Source result',
   'console_save' => 'Save',

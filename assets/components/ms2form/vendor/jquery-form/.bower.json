@@ -1,0 +1,23 @@
+{
+  "name": "jquery-form",
+  "main": "jquery.form.js",
+  "author": "M. Alsup",
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "ignore": [
+    "README.md",
+    "composer.json",
+    "form.jquery.json",
+    "package.json"
+  ],
+  "homepage": "https://github.com/me6iaton/form",
+  "_release": "37d3844230",
+  "_resolution": {
+    "type": "commit",
+    "commit": "37d3844230e3d7fc9a53eccbd420b7c1f63668b0"
+  },
+  "_source": "git@github.com:me6iaton/form.git",
+  "_target": "37d3844230e3d7fc9a53eccbd420b7c1f63668b0",
+  "_originalSource": "git@github.com:me6iaton/form.git"
+}

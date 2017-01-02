@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modtelegram',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b3199cbe4185dabb83cbc89a5a757f17',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '33c2444e5c44ae8f627644bfba24ede3',
+  'native_key' => 'modtelegram_tpl_user_info',
+  'object' => '{"key":"modtelegram_tpl_user_info","value":"modTelegram.user.info","xtype":"textfield","namespace":"modtelegram","area":"modtelegram_main","editedon":null}',
+);

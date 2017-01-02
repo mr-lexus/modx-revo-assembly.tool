@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'virtualpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '686570b0c3dfccbd8dee203fa407802d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5d35a80ea218673ea975231a3378839e',
+  'native_key' => 'virtualpage_fastrouter_key',
+  'object' => '{"key":"virtualpage_fastrouter_key","value":"fastrouter","xtype":"textfield","namespace":"virtualpage","area":"virtualpage_main","editedon":null}',
+);

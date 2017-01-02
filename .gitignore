@@ -1,0 +1,5 @@
+!/core/cache/.gitkeep
+/core/cache/*
+/core/import/*
+/core/export/*
+/assets/cache_image/*

@@ -1,0 +1,40 @@
+Changelog for frontendManager.
+
+1.0.9-beta
+==============
+- Фикс адреса админки
+
+1.0.8-beta
+==============
+- Фикс событий плагина
+
+1.0.7-beta
+==============
+- Добавлена адаптивная верстка панели
+
+1.0.5-beta
+==============
+- Исправлен серьезный баг с кэшэм
+
+1.0.3-beta
+==============
+- Стили, скрипты, чанк вынесены в настройки
+- Перезагрузка страницы после сохранения
+
+1.0.1-beta
+==============
+- Добавлен класс для кнопки редактирования чанка
+- Убрано все лишнее при редактировании чанков
+
+
+1.0.0-beta
+==============
+- Opimized for MODX 2.3
+- Improved processors
+- Disabled plugin and system settings
+- Improved UI
+- Added grid actions
+- Added icons in menu
+- Added search in grid
+- Grid sorting
+- Enable and disable actions

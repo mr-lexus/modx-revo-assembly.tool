@@ -42,7 +42,10 @@ $xpdo_meta_map['CollectionTemplate']= array (
     'child_content_disposition' => NULL,
     'permanent_sort_before' => '',
     'permanent_sort_after' => '',
-    'selection_link_condition' => NULL,
+    'selection_link_condition' => '',
+    'search_query_exclude_tvs' => 0,
+    'search_query_exclude_tagger' => 0,
+    'search_query_title_only' => 0,
   ),
   'fieldMeta' => 
   array (
@@ -308,6 +311,31 @@ $xpdo_meta_map['CollectionTemplate']= array (
     array (
       'dbtype' => 'text',
       'phptype' => 'string',
+      'default' => '',
+    ),
+    'search_query_exclude_tvs' => 
+    array (
+      'dbtype' => 'int',
+      'precision' => '1',
+      'phptype' => 'boolean',
+      'null' => false,
+      'default' => 0,
+    ),
+    'search_query_exclude_tagger' => 
+    array (
+      'dbtype' => 'int',
+      'precision' => '1',
+      'phptype' => 'boolean',
+      'null' => false,
+      'default' => 0,
+    ),
+    'search_query_title_only' => 
+    array (
+      'dbtype' => 'int',
+      'precision' => '1',
+      'phptype' => 'boolean',
+      'null' => false,
+      'default' => 0,
     ),
   ),
   'composites' => 

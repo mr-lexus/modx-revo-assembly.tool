@@ -69,6 +69,7 @@
   'prop_s3.thumbnailType_desc' => 'The image type to render thumbnails as.',
   'prop_s3.url_desc' => 'The URL of the Amazon S3 instance.',
   's3_no_move_folder' => 'The S3 driver does not support moving of folders at this time.',
+  'prop_s3.region_desc' => 'Region of the bucket. Example: us-west-1',
   'PNG' => 'PNG',
   'JPG' => 'JPG',
   'GIF' => 'GIF',

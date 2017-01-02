@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'virtualpage',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b01b544089c73f36ac43f3c90f46c07c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b5fdddb30c0adb71600def35c98f1998',
+  'native_key' => 'virtualpage_active',
+  'object' => '{"key":"virtualpage_active","value":true,"xtype":"combo-boolean","namespace":"virtualpage","area":"virtualpage_main","editedon":null}',
+);

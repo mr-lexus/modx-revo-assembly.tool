@@ -1,0 +1,18 @@
+<?php return array (
+  'preserve_keys' => true,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'namespace' => 'modtelegram',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '69ed02b7136dd781f722fc3fc6a4e22d',
+  'package' => 'modx',
+  'class' => 'modUserGroup',
+  'signature' => '840a0749819d068c74d4a766dc42715b',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"Telegram Manager","description":null,"parent":0,"rank":0,"dashboard":1}',
+);

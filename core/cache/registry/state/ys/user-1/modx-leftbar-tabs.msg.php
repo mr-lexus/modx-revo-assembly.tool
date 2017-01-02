@@ -1,5 +1,5 @@
 <?php
 return array (
   'collapsed' => true,
-  'width' => 310,
+  'width' => 369,
 );

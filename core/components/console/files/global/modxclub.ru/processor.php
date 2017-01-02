@@ -7,15 +7,7 @@ $modx->setLogTarget('HTML');
  
 $namespace = 'modxsite';        // Неймспейс комопонента
 
-$params = array(
-    "where" => [
-            // "publishedon:!=" => 0,
-            "parent" => 6
-        ],
-        // "limit" => 0,
-        // "sort" => "publishedon",
-        // "dir" => "DESC",
-        // "getPage" => true
+$params = array(  
 );
 
 if(!$response = $modx->runProcessor('site/web/getdata',

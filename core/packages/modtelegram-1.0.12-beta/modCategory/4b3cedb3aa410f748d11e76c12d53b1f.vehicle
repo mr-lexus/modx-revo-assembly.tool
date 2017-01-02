@@ -1,0 +1,152 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '9cc0d459567b662b9c3b02fc4705a078' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"modTelegram.user.info","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+user:gt=`0`:then=`<b>\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c:<\\/b> [[+user:userinfo=`username`]]`:else=``]]\\r\\n[[+resource:gt=`0`:then=`<b>\\u0421\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0430:<\\/b> <a href=\\"[[~[[+resource]]?scheme=`full`]]\\">[[+resource]]<\\/a>`:else=``]]","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/modtelegram\\/elements\\/chunks\\/chunk.user.info.tpl","content":"[[+user:gt=`0`:then=`<b>\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c:<\\/b> [[+user:userinfo=`username`]]`:else=``]]\\r\\n[[+resource:gt=`0`:then=`<b>\\u0421\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0430:<\\/b> <a href=\\"[[~[[+resource]]?scheme=`full`]]\\">[[+resource]]<\\/a>`:else=``]]"}',
+        'guid' => 'eabaa548a9e9024f34b33dfccc266f59',
+        'native_key' => 0,
+        'signature' => '06b3f16a816ced2ea0e15c766b638f83',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '9f3eedfead193f70799457c15e0b9030' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"modTelegram.helper","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var modtelegram $modtelegram *\\/\\r\\nif (!$modtelegram = $modx->getService(\'modtelegram\', \'modtelegram\', $modx->getOption(\'modtelegram_core_path\', null,\\r\\n        $modx->getOption(\'core_path\') . \'components\\/modtelegram\\/\') . \'model\\/modtelegram\\/\', $scriptProperties)\\r\\n) {\\r\\n    return \'Could not load modtelegram class!\';\\r\\n}\\r\\n\\r\\n$wrapper = $scriptProperties[\'wrapper\'] = $modtelegram->getOption(\'wrapper\', $scriptProperties, \'\', true);\\r\\n\\r\\n$helper = trim($modx->getOption(\'helper\', $scriptProperties, \'{}\', true));\\r\\n$helper = $scriptProperties[\'helper\'] = strpos($helper, \'{\') === 0\\r\\n    ? $modx->fromJSON($helper)\\r\\n    : array();\\r\\n\\r\\n$scriptProperties[\'resource\'] = $modtelegram->getOption(\'resource\', $scriptProperties, $modx->resource->id, true);\\r\\n$scriptProperties[\'user\'] = $modtelegram->getOption(\'user\', $scriptProperties, $modx->user->id, true);\\r\\n\\r\\n$propkey = $scriptProperties[\'propkey\'] = $modx->getOption(\'propkey\', $scriptProperties,\\r\\n    sha1(serialize($scriptProperties)), true);\\r\\n\\r\\n$modtelegram->initialize($modx->context->key, $scriptProperties);\\r\\n$modtelegram->saveProperties($scriptProperties);\\r\\n$modtelegram->loadResourceJsCss($scriptProperties);\\r\\n\\r\\nreturn \'\';","locked":0,"properties":"a:6:{s:7:\\"actions\\";a:7:{s:4:\\"name\\";s:7:\\"actions\\";s:4:\\"desc\\";s:24:\\"modtelegram_prop_actions\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:44:\\"initialize,getmessage,sendmessage,attachfile\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"helper\\";a:7:{s:4:\\"name\\";s:6:\\"helper\\";s:4:\\"desc\\";s:23:\\"modtelegram_prop_helper\\";s:4:\\"type\\";s:8:\\"textarea\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:29:\\"{\\"type\\":\\"popup\\",\\"wrapper\\":\\"\\"}\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"frontendCss\\";a:7:{s:4:\\"name\\";s:11:\\"frontendCss\\";s:4:\\"desc\\";s:28:\\"modtelegram_prop_frontendCss\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:33:\\"[[+assetsUrl]]css\\/web\\/default.css\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"frontendJs\\";a:7:{s:4:\\"name\\";s:10:\\"frontendJs\\";s:4:\\"desc\\";s:27:\\"modtelegram_prop_frontendJs\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:31:\\"[[+assetsUrl]]js\\/web\\/default.js\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"frontendLexicon\\";a:7:{s:4:\\"name\\";s:15:\\"frontendLexicon\\";s:4:\\"desc\\";s:32:\\"modtelegram_prop_frontendLexicon\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:19:\\"modtelegram:default\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:9:\\"actionUrl\\";a:7:{s:4:\\"name\\";s:9:\\"actionUrl\\";s:4:\\"desc\\";s:26:\\"modtelegram_prop_actionUrl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:24:\\"[[+assetsUrl]]action.php\\";s:7:\\"lexicon\\";s:22:\\"modtelegram:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/modtelegram\\/elements\\/snippets\\/snippet.helper.php","content":"\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var modtelegram $modtelegram *\\/\\r\\nif (!$modtelegram = $modx->getService(\'modtelegram\', \'modtelegram\', $modx->getOption(\'modtelegram_core_path\', null,\\r\\n        $modx->getOption(\'core_path\') . \'components\\/modtelegram\\/\') . \'model\\/modtelegram\\/\', $scriptProperties)\\r\\n) {\\r\\n    return \'Could not load modtelegram class!\';\\r\\n}\\r\\n\\r\\n$wrapper = $scriptProperties[\'wrapper\'] = $modtelegram->getOption(\'wrapper\', $scriptProperties, \'\', true);\\r\\n\\r\\n$helper = trim($modx->getOption(\'helper\', $scriptProperties, \'{}\', true));\\r\\n$helper = $scriptProperties[\'helper\'] = strpos($helper, \'{\') === 0\\r\\n    ? $modx->fromJSON($helper)\\r\\n    : array();\\r\\n\\r\\n$scriptProperties[\'resource\'] = $modtelegram->getOption(\'resource\', $scriptProperties, $modx->resource->id, true);\\r\\n$scriptProperties[\'user\'] = $modtelegram->getOption(\'user\', $scriptProperties, $modx->user->id, true);\\r\\n\\r\\n$propkey = $scriptProperties[\'propkey\'] = $modx->getOption(\'propkey\', $scriptProperties,\\r\\n    sha1(serialize($scriptProperties)), true);\\r\\n\\r\\n$modtelegram->initialize($modx->context->key, $scriptProperties);\\r\\n$modtelegram->saveProperties($scriptProperties);\\r\\n$modtelegram->loadResourceJsCss($scriptProperties);\\r\\n\\r\\nreturn \'\';"}',
+        'guid' => '9a4ff2c2197f22d88e03e956b96e8ddd',
+        'native_key' => 0,
+        'signature' => 'c6ac83e2e167e02eee1d115bdd63159b',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '422f99a0d48e72a8f5ccaa682d213582' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"modTelegram","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\n\\n    case \'OnMODXInit\':\\n        $modx->loadClass(\'modUser\');\\n\\n        $modx->map[\'modUser\'][\'composites\'][\'TelegramManager\'] = array(\\n            \'class\'       => \'modTelegramManager\',\\n            \'local\'       => \'id\',\\n            \'foreign\'     => \'user\',\\n            \'cardinality\' => \'one\',\\n            \'owner\'       => \'local\',\\n        );\\n\\n        $modx->map[\'modUser\'][\'composites\'][\'TelegramUser\'] = array(\\n            \'class\'       => \'modTelegramUser\',\\n            \'local\'       => \'id\',\\n            \'foreign\'     => \'user\',\\n            \'cardinality\' => \'one\',\\n            \'owner\'       => \'local\',\\n        );\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/modtelegram\\/elements\\/plugins\\/plugin.modtelegram.php","content":"switch ($modx->event->name) {\\n\\n    case \'OnMODXInit\':\\n        $modx->loadClass(\'modUser\');\\n\\n        $modx->map[\'modUser\'][\'composites\'][\'TelegramManager\'] = array(\\n            \'class\'       => \'modTelegramManager\',\\n            \'local\'       => \'id\',\\n            \'foreign\'     => \'user\',\\n            \'cardinality\' => \'one\',\\n            \'owner\'       => \'local\',\\n        );\\n\\n        $modx->map[\'modUser\'][\'composites\'][\'TelegramUser\'] = array(\\n            \'class\'       => \'modTelegramUser\',\\n            \'local\'       => \'id\',\\n            \'foreign\'     => \'user\',\\n            \'cardinality\' => \'one\',\\n            \'owner\'       => \'local\',\\n        );\\n        break;\\n}"}',
+        'guid' => '5b341d8ff07f634ea591634edb3d99d5',
+        'native_key' => NULL,
+        'signature' => 'e5313a3c8cd775744378f998123e5651',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'cdb2bc5136268874ff5f4a26c2ac534a' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnMODXInit","priority":100,"propertyset":0}',
+              'guid' => '078e497f6308a63e44e6b4e8b118b0a0',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnMODXInit',
+              ),
+              'signature' => 'bef4d25519a7a52d9229c5fae04bac84',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'abort_install_on_vehicle_fail' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'modtelegram',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"modtelegram"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modtelegram"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f.resolve.extension.resolver","type":"php","name":"resolve.extension"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f.validate.core.vendors.validator","type":"php","name":"validate.core.vendors"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modtelegram-1.0.12-beta\\/modCategory\\/4b3cedb3aa410f748d11e76c12d53b1f.validate.assets.vendors.validator","type":"php","name":"validate.assets.vendors"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd0b8d13f8c29a26ac23cbb2ef239ab9f',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '4b3cedb3aa410f748d11e76c12d53b1f',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"modTelegram","rank":0}',
+);
