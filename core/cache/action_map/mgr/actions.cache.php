@@ -10,7 +10,7 @@
     'help_url' => '',
     'namespace_name' => 'clientconfig',
     'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/clientconfig/',
-    'namespace_assets_path' => '',
+    'namespace_assets_path' => '/Users/mhamstra/Sites/premium.local/ClientConfig/assets/components/clientconfig/',
   ),
   8 => 
   array (
@@ -37,19 +37,6 @@
     'namespace_name' => 'console',
     'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/console/',
     'namespace_assets_path' => '{assets_path}components/console/',
-  ),
-  18 => 
-  array (
-    'id' => '18',
-    'namespace' => 'gallery',
-    'controller' => 'index',
-    'haslayout' => '1',
-    'lang_topics' => 'gallery:default',
-    'assets' => '',
-    'help_url' => '',
-    'namespace_name' => 'gallery',
-    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/gallery/',
-    'namespace_assets_path' => '/Users/theboxer/www/modx/pkgs/gallery/assets/components/gallery/',
   ),
   9 => 
   array (
@@ -101,19 +88,6 @@
     'help_url' => '',
     'namespace_name' => 'versionx',
     'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/versionx/',
-    'namespace_assets_path' => '',
-  ),
-  10 => 
-  array (
-    'id' => '10',
-    'namespace' => 'virtualpage',
-    'controller' => 'index',
-    'haslayout' => '1',
-    'lang_topics' => 'virtualpage:default',
-    'assets' => '',
-    'help_url' => '',
-    'namespace_name' => 'virtualpage',
-    'namespace_path' => '/home/lexus/server/my_skill/modxsmarty.my.skill/core/components/virtualpage/',
     'namespace_assets_path' => '',
   ),
 );

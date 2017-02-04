@@ -4,8 +4,8 @@
  */
 $database_type = 'mysql';
 $database_server = 'localhost';
-$database_user = 'admin';
-$database_password = 'admin';
+$database_user = 'root';
+$database_password = '';
 $database_connection_charset = 'utf8';
 $dbase = 'modxsmartymyskill';
 $table_prefix = 'modx_';

@@ -12,18 +12,9 @@
   ),
   'eventMap' => 
   array (
-    'msOnBeforeAddToCart' => 
-    array (
-      41 => '41',
-    ),
-    'OnBeforeCacheUpdate' => 
-    array (
-      49 => '49',
-    ),
     'OnBeforeDocFormSave' => 
     array (
       18 => '18',
-      41 => '41',
     ),
     'OnBeforeEmptyTrash' => 
     array (
@@ -44,8 +35,8 @@
     'OnChunkFormPrerender' => 
     array (
       36 => '36',
-      1 => '1',
       52 => '52',
+      1 => '1',
     ),
     'OnChunkFormSave' => 
     array (
@@ -57,16 +48,14 @@
     ),
     'OnDocFormPrerender' => 
     array (
-      52 => '52',
-      50 => '50',
-      41 => '41',
-      51 => '51',
-      31 => '31',
-      19 => '19',
-      18 => '18',
       1 => '1',
+      19 => '19',
       29 => '29',
+      50 => '50',
+      51 => '51',
+      18 => '18',
       32 => '32',
+      52 => '52',
     ),
     'OnDocFormRender' => 
     array (
@@ -76,8 +65,8 @@
     ),
     'OnDocFormSave' => 
     array (
-      40 => '40',
       52 => '52',
+      40 => '40',
     ),
     'OnEmptyTrash' => 
     array (
@@ -97,49 +86,45 @@
     ),
     'OnHandleRequest' => 
     array (
+      5 => '5',
       30 => '30',
       35 => '35',
-      5 => '5',
-      49 => '49',
     ),
     'OnLoadWebDocument' => 
     array (
       40 => '40',
-      41 => '41',
       6 => '6',
     ),
     'OnManagerPageBeforeRender' => 
     array (
+      27 => '27',
+      33 => '33',
+      18 => '18',
       1 => '1',
       35 => '35',
-      33 => '33',
-      31 => '31',
-      18 => '18',
-      27 => '27',
     ),
     'OnManagerPageInit' => 
     array (
-      41 => '41',
-      6 => '6',
       7 => '7',
-      18 => '18',
       23 => '23',
+      18 => '18',
+      6 => '6',
     ),
     'OnMODXInit' => 
     array (
       28 => '28',
+      30 => '30',
       50 => '50',
       53 => '53',
     ),
     'OnPageNotFound' => 
     array (
       40 => '40',
-      49 => '49',
     ),
     'OnPluginFormPrerender' => 
     array (
-      52 => '52',
       1 => '1',
+      52 => '52',
       36 => '36',
     ),
     'OnPluginFormSave' => 
@@ -164,22 +149,21 @@
     ),
     'OnRichTextEditorRegister' => 
     array (
-      1 => '1',
       17 => '17',
+      1 => '1',
     ),
     'OnSiteRefresh' => 
     array (
       5 => '5',
-      40 => '40',
       16 => '16',
+      40 => '40',
       28 => '28',
-      48 => '48',
     ),
     'OnSnipFormPrerender' => 
     array (
-      52 => '52',
       36 => '36',
       1 => '1',
+      52 => '52',
     ),
     'OnSnipFormSave' => 
     array (
@@ -191,9 +175,9 @@
     ),
     'OnTempFormPrerender' => 
     array (
+      52 => '52',
       36 => '36',
       1 => '1',
-      52 => '52',
     ),
     'OnTempFormSave' => 
     array (
@@ -214,35 +198,31 @@
     ),
     'OnTVInputPropertiesList' => 
     array (
+      50 => '50',
+      19 => '19',
       27 => '27',
       32 => '32',
       33 => '33',
-      50 => '50',
-      19 => '19',
-      31 => '31',
       51 => '51',
     ),
     'OnTVInputRenderList' => 
     array (
+      51 => '51',
+      50 => '50',
       19 => '19',
       27 => '27',
-      31 => '31',
       32 => '32',
-      50 => '50',
-      51 => '51',
       33 => '33',
     ),
     'OnTVOutputRenderList' => 
     array (
-      33 => '33',
       27 => '27',
-      31 => '31',
+      33 => '33',
     ),
     'OnTVOutputRenderPropertiesList' => 
     array (
-      31 => '31',
-      33 => '33',
       27 => '27',
+      33 => '33',
     ),
     'OnUpdaterCoreRefresh' => 
     array (
@@ -1850,7 +1830,7 @@ switch ($modx->event->name) {
 $eventName = $modx->event->name;
 
 switch($eventName) {
-    case \'OnHandleRequest\':
+    case \'OnMODXInit\':
         /* Grab the class */
         $path = $modx->getOption(\'clientconfig.core_path\', null, $modx->getOption(\'core_path\') . \'components/clientconfig/\');
         $path .= \'model/clientconfig/\';
@@ -1871,96 +1851,6 @@ switch($eventName) {
         break;
 }
 
-return;',
-      'locked' => '0',
-      'properties' => NULL,
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => '',
-    ),
-    31 => 
-    array (
-      'id' => '31',
-      'source' => '0',
-      'property_preprocess' => '0',
-      'name' => 'GalleryCustomTV',
-      'description' => '',
-      'editor_type' => '0',
-      'category' => '0',
-      'cache_type' => '0',
-      'plugincode' => '/**
- * Handles plugin events for Gallery\'s Custom TV
- * 
- * @package gallery
- */
-$corePath = $modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\');
-switch ($modx->event->name) {
-    case \'OnTVInputRenderList\':
-        $modx->event->output($corePath.\'elements/tv/input/\');
-        break;
-    case \'OnTVOutputRenderList\':
-        $modx->event->output($corePath.\'elements/tv/output/\');
-        break;
-    case \'OnTVInputPropertiesList\':
-        $modx->event->output($corePath.\'elements/tv/inputoptions/\');
-        break;
-    case \'OnTVOutputRenderPropertiesList\':
-        $modx->event->output($corePath.\'elements/tv/properties/\');
-        break;
-    case \'OnManagerPageBeforeRender\':
-        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\').\'model/gallery/\',$scriptProperties);
-        if (!($gallery instanceof Gallery)) return \'\';
-
-        $snippetIds = \'\';
-        $gallerySnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'Gallery\'));
-        if ($gallerySnippet) {
-            $snippetIds .= \'GAL.snippetGallery = "\'.$gallerySnippet->get(\'id\').\'";\'."\\n";
-        }
-        $galleryItemSnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'GalleryItem\'));
-        if ($galleryItemSnippet) {
-            $snippetIds .= \'GAL.snippetGalleryItem = "\'.$galleryItemSnippet->get(\'id\').\'";\'."\\n";
-        }
-
-        $jsDir = $modx->getOption(\'gallery.assets_url\',null,$modx->getOption(\'assets_url\').\'components/gallery/\').\'js/mgr/\';
-        $modx->controller->addLexiconTopic(\'gallery:default\');
-        $modx->controller->addJavascript($jsDir.\'gallery.js\');
-        $modx->controller->addJavascript($jsDir.\'tree.js\');
-        $modx->controller->addHtml(\'<script type="text/javascript">
-        Ext.onReady(function() {
-            GAL.config.connector_url = "\'.$gallery->config[\'connectorUrl\'].\'";
-            \'.$snippetIds.\'
-        });
-        </script>\');
-        break;
-    case \'OnDocFormPrerender\':
-        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\').\'model/gallery/\',$scriptProperties);
-        if (!($gallery instanceof Gallery)) return \'\';
-
-        /* assign gallery lang to JS */
-        $modx->controller->addLexiconTopic(\'gallery:tv\');
-
-        /* @var modAction $action */
-        $action = $modx->getObject(\'modAction\',array(
-            \'namespace\' => \'gallery\',
-            \'controller\' => \'index\',
-        ));
-        $modx->controller->addHtml(\'<script type="text/javascript">
-        Ext.onReady(function() {
-            GAL.config = {};
-            GAL.config.connector_url = "\'.$gallery->config[\'connectorUrl\'].\'";
-            GAL.action = "\'.($action ? $action->get(\'id\') : 0).\'";
-        });
-        </script>\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/Spotlight.js\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/gallery.js\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/widgets/album/album.items.view.js\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/widgets/album/album.tree.js\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/gal.browser.js\');
-        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/galtv.js\');
-        $modx->controller->addCss($gallery->config[\'cssUrl\'].\'mgr.css\');
-        break;
-}
 return;',
       'locked' => '0',
       'properties' => NULL,
@@ -2259,105 +2149,6 @@ switch ($modx->event->name) {
       'static' => '0',
       'static_file' => 'core/components/elementnotes/elements/plugins/plugin.elementnotes.php',
     ),
-    48 => 
-    array (
-      'id' => '48',
-      'source' => '0',
-      'property_preprocess' => '0',
-      'name' => 'dropbox',
-      'description' => 'dropbox_desc',
-      'editor_type' => '0',
-      'category' => '0',
-      'cache_type' => '0',
-      'plugincode' => '/**
- * @var modX $modx
- */
-
-switch($modx->event->name){
-    
-    case \'OnSiteRefresh\':
-        
-        if(!function_exists(\'cleanUpDirectory\')){
-            function cleanUpDirectory($path)
-            {
-            	if (!file_exists($path)) {
-            		return;
-            	}
-            	$iterator = new RecursiveDirectoryIterator($path);
-            	foreach (new RecursiveIteratorIterator($iterator, RecursiveIteratorIterator::CHILD_FIRST) as $file) {
-            		if ($file->isDir()) {
-            			@rmdir($file->getPathname());
-            		} else {
-            			@unlink($file->getPathname());
-            		}
-            	}
-            }
-        }
-        
-    	$cachePath = $modx->getOption(\'assets_path\', null, MODX_ASSETS_PATH) . \'components/dropbox/cache\';
-    	if (file_exists($cachePath)) {
-    	    cleanUpDirectory($cachePath);
-    // 		foreach (new DirectoryIterator($cachePath) as $file) {
-    // 			if (
-    // 			    $file->isDir()
-    // 			    AND !$file->isDot()
-    // 			) {
-    // 				cleanUpDirectory($file->getPathname());
-    // 				// cleanUpDirectory($file->getPathname() );
-    // 				// $modx->log(1, $file->getPathname());
-    // 			}
-    // 		}
-    	}
-        
-        
-        break;
-        
-    default:;
-}
- 
-return;',
-      'locked' => '0',
-      'properties' => NULL,
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => '',
-    ),
-    49 => 
-    array (
-      'id' => '49',
-      'source' => '1',
-      'property_preprocess' => '0',
-      'name' => 'vpSystem',
-      'description' => '',
-      'editor_type' => '0',
-      'category' => '51',
-      'cache_type' => '0',
-      'plugincode' => '/** @var array $scriptProperties */
-$fqn = $modx->getOption(\'virtualpage_class\', null, \'virtualpage.virtualpage\', true);
-$path = $modx->getOption(\'virtualpage_class_path\', null,
-    $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components/virtualpage/\');
-/** @var virtualpage $virtualpage */
-if (!$virtualpage = $modx->getService($fqn, \'\', $path . \'model/\', array(\'core_path\' => $path))) {
-    return false;
-}
-
-$className = \'virtualpage\' . $modx->event->name;
-$modx->loadClass(\'virtualpagePlugin\', $path . \'model/virtualpage/systems/\', true, true);
-$modx->loadClass($className, $path . \'model/virtualpage/systems/\', true, true);
-if (class_exists($className)) {
-    /** @var $virtualpage $plugin */
-    $plugin = new $className($modx, $scriptProperties);
-    $plugin->run();
-}
-return;',
-      'locked' => '0',
-      'properties' => 'a:0:{}',
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => 'core/components/virtualpage/elements/plugins/plugin.system.php',
-    ),
     54 => 
     array (
       'id' => '54',
@@ -2368,7 +2159,16 @@ return;',
       'editor_type' => '0',
       'category' => '87',
       'cache_type' => '0',
-      'plugincode' => 'if (!$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'Administrator\')) return;
+      'plugincode' => '// if ( !$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'Administrator\') ) {
+// 	if ( !$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'ContentManager\') ) {
+// 		return;
+// 	}
+// }
+
+if ( (!$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'Administrator\')) and (!$modx->user->hasSessionContext(\'mgr\') || !$modx->user->isMember(\'ContentManager\')) ) {
+	return;
+}
+
 switch ($modx->event->name) {
     case \'OnWebPagePrerender\':
         $frontendManager = $modx->getService(\'frontendmanager\',\'frontendManager\', MODX_CORE_PATH . \'components/frontendmanager/model/frontendmanager/\', array());
@@ -2389,7 +2189,7 @@ switch ($modx->event->name) {
 }
 return;',
       'locked' => '0',
-      'properties' => NULL,
+      'properties' => 'a:0:{}',
       'disabled' => '0',
       'moduleguid' => '',
       'static' => '0',
@@ -2543,31 +2343,6 @@ return;',
       'moduleguid' => '',
       'static' => '0',
       'static_file' => 'core/components/tickets/elements/plugins/plugin.tickets.php',
-    ),
-    41 => 
-    array (
-      'id' => '41',
-      'source' => '1',
-      'property_preprocess' => '0',
-      'name' => 'msOptionsPrice',
-      'description' => '',
-      'editor_type' => '0',
-      'category' => '0',
-      'cache_type' => '0',
-      'plugincode' => '$msOptionsPrice = $modx->getService(\'msoptionsprice\',\'msOptionsPrice\',$modx->getOption(\'msoptionsprice_core_path\',null,$modx->getOption(\'core_path\').\'components/msoptionsprice/\').\'model/msoptionsprice/\',$scriptProperties);
-if (!($msOptionsPrice instanceof msOptionsPrice)) return \'\';
-
-$eventName = $modx->event->name;
-if ( method_exists( $msOptionsPrice, $eventName ) && $msOptionsPrice->ms_op_active ) {
-	$eventName = lcfirst($eventName);
-	$msOptionsPrice->$eventName( $scriptProperties, $product );
-}',
-      'locked' => '0',
-      'properties' => NULL,
-      'disabled' => '0',
-      'moduleguid' => '',
-      'static' => '0',
-      'static_file' => 'core/components/msoptionsprice/elements/plugins/plugin.msoptionsprice.php',
     ),
     51 => 
     array (
@@ -2825,19 +2600,6 @@ return;',
           'authority' => 9999,
           'policy' => 
           array (
-            'mscategory_save' => true,
-            'msproduct_save' => true,
-            'msproduct_publish' => true,
-            'msproduct_delete' => true,
-            'msorder_save' => true,
-            'msorder_view' => true,
-            'msorder_list' => true,
-            'mssetting_save' => true,
-            'mssetting_view' => true,
-            'mssetting_list' => true,
-            'msproductfile_save' => true,
-            'msproductfile_generate' => true,
-            'msproductfile_list' => true,
           ),
         ),
         3 => 
@@ -2846,12 +2608,188 @@ return;',
           'authority' => 9999,
           'policy' => 
           array (
-            'mscategory_save' => true,
-            'msproduct_save' => true,
-            'msproductfile_save' => true,
-            'msproductfile_generate' => true,
-            'msproductfile_list' => true,
-            'publish_document' => true,
+          ),
+        ),
+        4 => 
+        array (
+          'principal' => 3,
+          'authority' => 9999,
+          'policy' => 
+          array (
+            'about' => false,
+            'access_permissions' => false,
+            'actions' => false,
+            'change_password' => false,
+            'change_profile' => true,
+            'charsets' => false,
+            'class_map' => true,
+            'components' => false,
+            'content_types' => false,
+            'countries' => true,
+            'create' => false,
+            'credits' => false,
+            'customize_forms' => false,
+            'dashboards' => false,
+            'database' => false,
+            'database_truncate' => false,
+            'delete_category' => false,
+            'delete_chunk' => false,
+            'delete_context' => false,
+            'delete_document' => true,
+            'delete_eventlog' => false,
+            'delete_plugin' => false,
+            'delete_propertyset' => false,
+            'delete_role' => false,
+            'delete_snippet' => false,
+            'delete_template' => false,
+            'delete_tv' => false,
+            'delete_user' => false,
+            'directory_chmod' => true,
+            'directory_create' => true,
+            'directory_list' => true,
+            'directory_remove' => true,
+            'directory_update' => true,
+            'edit_category' => false,
+            'edit_chunk' => false,
+            'edit_context' => false,
+            'edit_document' => true,
+            'edit_locked' => false,
+            'edit_plugin' => false,
+            'edit_propertyset' => false,
+            'edit_role' => false,
+            'edit_snippet' => false,
+            'edit_template' => false,
+            'edit_tv' => false,
+            'edit_user' => false,
+            'element_tree' => false,
+            'empty_cache' => false,
+            'error_log_erase' => false,
+            'error_log_view' => false,
+            'events' => false,
+            'export_static' => false,
+            'file_create' => true,
+            'file_list' => true,
+            'file_manager' => true,
+            'file_remove' => true,
+            'file_tree' => true,
+            'file_unpack' => false,
+            'file_update' => true,
+            'file_upload' => true,
+            'file_view' => true,
+            'flush_sessions' => false,
+            'frames' => true,
+            'help' => false,
+            'home' => true,
+            'import_static' => false,
+            'languages' => false,
+            'lexicons' => false,
+            'list' => true,
+            'load' => true,
+            'logout' => true,
+            'logs' => false,
+            'menus' => false,
+            'menu_reports' => false,
+            'menu_security' => false,
+            'menu_site' => true,
+            'menu_support' => false,
+            'menu_system' => false,
+            'menu_tools' => true,
+            'menu_user' => true,
+            'messages' => false,
+            'namespaces' => false,
+            'new_category' => false,
+            'new_chunk' => false,
+            'new_context' => false,
+            'new_document' => true,
+            'new_document_in_root' => false,
+            'new_plugin' => false,
+            'new_propertyset' => false,
+            'new_role' => false,
+            'new_snippet' => false,
+            'new_static_resource' => false,
+            'new_symlink' => false,
+            'new_template' => false,
+            'new_tv' => false,
+            'new_user' => false,
+            'new_weblink' => false,
+            'packages' => true,
+            'policy_delete' => false,
+            'policy_edit' => false,
+            'policy_new' => false,
+            'policy_save' => false,
+            'policy_template_delete' => false,
+            'policy_template_edit' => false,
+            'policy_template_new' => false,
+            'policy_template_save' => false,
+            'policy_template_view' => false,
+            'policy_view' => false,
+            'property_sets' => false,
+            'providers' => false,
+            'publish_document' => false,
+            'purge_deleted' => false,
+            'remove' => false,
+            'remove_locks' => false,
+            'resourcegroup_delete' => false,
+            'resourcegroup_edit' => false,
+            'resourcegroup_new' => false,
+            'resourcegroup_resource_edit' => false,
+            'resourcegroup_resource_list' => false,
+            'resourcegroup_save' => false,
+            'resourcegroup_view' => false,
+            'resource_duplicate' => true,
+            'resource_quick_create' => false,
+            'resource_quick_update' => false,
+            'resource_tree' => true,
+            'save' => false,
+            'save_category' => false,
+            'save_chunk' => false,
+            'save_context' => false,
+            'save_document' => true,
+            'save_plugin' => false,
+            'save_propertyset' => false,
+            'save_role' => false,
+            'save_snippet' => false,
+            'save_template' => false,
+            'save_tv' => false,
+            'save_user' => false,
+            'search' => true,
+            'settings' => false,
+            'sources' => false,
+            'source_delete' => false,
+            'source_edit' => false,
+            'source_save' => false,
+            'source_view' => true,
+            'steal_locks' => false,
+            'tree_show_element_ids' => false,
+            'tree_show_resource_ids' => true,
+            'undelete_document' => false,
+            'unlock_element_properties' => false,
+            'unpublish_document' => false,
+            'usergroup_delete' => false,
+            'usergroup_edit' => false,
+            'usergroup_new' => false,
+            'usergroup_save' => false,
+            'usergroup_user_edit' => false,
+            'usergroup_user_list' => false,
+            'usergroup_view' => false,
+            'view' => true,
+            'view_category' => false,
+            'view_chunk' => false,
+            'view_context' => false,
+            'view_document' => true,
+            'view_element' => false,
+            'view_eventlog' => false,
+            'view_offline' => false,
+            'view_plugin' => false,
+            'view_propertyset' => false,
+            'view_role' => false,
+            'view_snippet' => false,
+            'view_sysinfo' => false,
+            'view_template' => false,
+            'view_tv' => false,
+            'view_unpublished' => false,
+            'view_user' => false,
+            'workspaces' => false,
           ),
         ),
       ),
